@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Моя прелесть — ювелирный дом в Павлодаре</title>
+<meta name="description" content="Ювелирный бутик «Моя прелесть» в ЦУМ Павлодара: современные коллекции и винтаж, рассрочка Halyk Bank до 12 месяцев, доставка по Казахстану.">
+<meta property="og:title" content="Моя прелесть — ювелирный дом в Павлодаре">
+<meta property="og:description" content="Открытие 12 декабря 2027 года в ЦУМ. Розыгрыш украшения в день открытия.">
+<meta name="theme-color" content="#0A2A24">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F3B33'/%3E%3Cpolygon points='19,4 45,4 60,19 60,45 45,60 19,60 4,45 4,19' fill='none' stroke='%23C6A25A' stroke-width='3'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia' font-size='22' fill='%23E2C98F'%3EМП%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&subset=cyrillic,cyrillic-ext&display=swap" rel="stylesheet">
+<style>
+:root{
+  --emerald:#0F3B33; --emerald-deep:#0A2A24; --gold:#C6A25A; --gold-soft:#E2C98F;
+  --onyx:#141414; --ivory:#F4EEE3; --cognac:#7A5233; --bordeaux:#5E1F2B;
+  --paper:#F4EEE3; --card:#FFFDF8; --ink:#1E1B16; --ink-soft:#5A5246; --line:rgba(122,82,51,.28);
+  --field:#FFFDF8; --sepia:#EFE2CC; --sepia-ink:#3B2A1C; --ok:#2E6B4F; --err:#8E2A34;
+  --serif:"Cormorant","Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Manrope","Segoe UI",Roboto,Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --paper:#141B19; --card:#1B2522; --ink:#EFE8DA; --ink-soft:#B6AC99; --line:rgba(198,162,90,.25); --field:#1F2A27; --sepia:#2A2119; --sepia-ink:#EBDCC4; --ok:#7FC7A4; --err:#E59AA2; }
+}
+:root[data-theme="dark"]{ --paper:#141B19; --card:#1B2522; --ink:#EFE8DA; --ink-soft:#B6AC99; --line:rgba(198,162,90,.25); --field:#1F2A27; --sepia:#2A2119; --sepia-ink:#EBDCC4; --ok:#7FC7A4; --err:#E59AA2; }
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth; scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0; background:var(--paper); color:var(--ink); font:400 16.5px/1.6 var(--sans); -webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img,svg{max-width:100%}
+a{color:inherit}
+button{font:inherit; color:inherit}
+:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+[hidden]{display:none!important}
+.wrap{width:min(1200px,100% - 40px); margin-inline:auto}
+.sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+.h2{font:600 clamp(34px,5vw,54px)/1.06 var(--serif); margin:0 0 14px}
+.lead{color:var(--ink-soft); max-width:62ch; font-size:17.5px; margin:0 0 36px}
+section{padding:88px 0}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; font:600 15.5px/1 var(--sans); padding:15px 24px; text-decoration:none; cursor:pointer; border:1px solid var(--gold); transition:background .2s,color .2s; background:transparent; color:var(--ink)}
+.btn-gold{background:var(--gold); color:var(--onyx)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-line:hover{background:rgba(198,162,90,.14)}
+.btn-dark{background:var(--emerald); color:#F4EEE3; border-color:var(--emerald)}
+.btn-dark:hover{background:#145046}
+.btn[disabled]{opacity:.45; cursor:not-allowed}
+.btn-sm{padding:10px 14px; font-size:14px}
+.linkbtn{background:none; border:0; padding:0; color:inherit; text-decoration:underline; cursor:pointer}
+.price{font:700 22px/1.1 var(--serif); font-variant-numeric:tabular-nums; white-space:nowrap}
+.muted{color:var(--ink-soft)}
+.note{font-size:13.5px; color:var(--ink-soft)}
+
+/* header */
+.top{position:sticky; top:env(safe-area-inset-top,0px); z-index:40; background:rgba(10,42,36,.95); backdrop-filter:blur(8px); border-bottom:1px solid rgba(198,162,90,.25); color:#EDE5D3}
+.top .wrap{display:flex; align-items:center; gap:20px; height:64px}
+.brand{display:flex; align-items:center; gap:11px; text-decoration:none; color:var(--gold-soft); flex:none}
+.brand svg{width:36px; height:36px}
+.brand span{font:600 18px/1 var(--serif); letter-spacing:.14em; text-transform:uppercase}
+.nav{display:flex; gap:18px; margin-left:auto}
+.nav a{text-decoration:none; font-size:14.5px; color:#E3DAC6}
+.nav a:hover{color:var(--gold-soft)}
+.tools{display:flex; align-items:center; gap:6px}
+.icon-btn{position:relative; width:42px; height:42px; display:grid; place-items:center; background:none; border:0; cursor:pointer; color:#EDE5D3}
+.icon-btn svg{width:22px; height:22px}
+.icon-btn .badge{position:absolute; top:3px; right:2px; min-width:18px; height:18px; padding:0 5px; border-radius:9px; background:var(--gold); color:var(--onyx); font:700 11px/18px var(--sans); text-align:center}
+.lang{display:flex; border:1px solid rgba(198,162,90,.5); margin-left:6px}
+.lang button{background:none; border:0; color:#EDE5D3; font:600 12.5px var(--sans); padding:7px 9px; cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--gold); color:var(--onyx)}
+.burger{display:none}
+@media (max-width:1060px){ .nav{display:none} .burger{display:grid} .tools{margin-left:auto} }
+@media (max-width:440px){ .brand span{display:none} }
+.mnav{position:fixed; inset:calc(64px + env(safe-area-inset-top,0px)) 0 auto 0; z-index:39; background:var(--emerald-deep); border-bottom:1px solid rgba(198,162,90,.3); padding:10px 20px 18px}
+.mnav a{display:block; padding:12px 0; color:#EDE5D3; text-decoration:none; border-bottom:1px solid rgba(198,162,90,.15); font-size:17px}
+
+/* hero */
+.hero{position:relative; overflow:hidden; background:radial-gradient(120% 90% at 50% 100%,#145046 0%,var(--emerald) 45%,var(--emerald-deep) 100%); color:#F1EADB; text-align:center; padding:64px 0 0}
+.sun{position:absolute; left:50%; bottom:0; width:min(1400px,180vw); transform:translateX(-50%); pointer-events:none}
+.sun .ray{transform-origin:700px 700px; transform:scaleY(0); animation:ray 1.6s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes ray{to{transform:scaleY(1)}}
+.hero-inner{position:relative; padding-bottom:110px}
+.kicker{font:500 italic 22px/1.3 var(--serif); color:var(--gold-soft); margin:0 0 6px}
+.hero h1{margin:0; font:600 clamp(50px,10.5vw,120px)/.95 var(--serif); letter-spacing:.06em; text-transform:uppercase; color:#F6EEDC}
+.rule{display:flex; align-items:center; justify-content:center; gap:14px; margin:24px auto 20px; width:min(420px,80%)}
+.rule::before,.rule::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--gold))}
+.rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.rule i{width:10px; height:10px; background:var(--gold); transform:rotate(45deg)}
+.opening{font:500 clamp(20px,3vw,27px)/1.35 var(--serif); margin:0 auto; max-width:32ch}
+.count{display:flex; justify-content:center; gap:clamp(8px,2vw,16px); margin:30px 0 34px; flex-wrap:wrap}
+.cell{width:clamp(72px,15vw,106px); aspect-ratio:1; clip-path:polygon(29% 0,71% 0,100% 29%,100% 71%,71% 100%,29% 100%,0 71%,0 29%); background:var(--gold); padding:1px; display:grid}
+.cell div{clip-path:inherit; background:rgba(10,42,36,.94); display:grid; place-content:center; text-align:center}
+.cell b{font:600 clamp(28px,5.6vw,44px)/1 var(--serif); color:#F6EEDC; font-variant-numeric:tabular-nums}
+.cell small{font-size:12px; color:var(--gold-soft); margin-top:4px}
+.open-now{font:600 clamp(32px,6vw,54px)/1.1 var(--serif); color:var(--gold-soft); margin:30px 0 34px}
+.ctas{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+.hero .btn-line{color:#F1EADB}
+.step-edge{display:block; width:100%; height:26px; background:var(--emerald-deep)}
+
+/* about */
+.about-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:56px; align-items:start}
+.about p{color:var(--ink-soft); max-width:58ch; font-size:17.5px; margin:0 0 14px}
+.promises{margin:0; padding:0; list-style:none; border:1px solid var(--line); position:relative; background:var(--card)}
+.promises::before,.promises::after{content:""; position:absolute; width:16px; height:16px; border:1px solid var(--gold)}
+.promises::before{top:-6px; left:-6px; border-right:0; border-bottom:0}
+.promises::after{bottom:-6px; right:-6px; border-left:0; border-top:0}
+.promises li{padding:18px 24px; border-bottom:1px solid var(--line)}
+.promises li:last-child{border-bottom:0}
+.promises h3{font:600 22px/1.2 var(--serif); margin:0 0 2px}
+.promises p{font-size:14.5px; margin:0}
+@media (max-width:860px){ .about-grid{grid-template-columns:1fr; gap:36px} }
+
+/* catalog */
+.catalog{background:var(--paper); border-top:1px solid var(--line)}
+.shows{display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; margin-bottom:14px; scrollbar-width:thin}
+.chip{flex:none; border:1px solid var(--line); background:var(--card); padding:9px 14px; cursor:pointer; font-size:14.5px; white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--emerald); color:#F4EEE3; border-color:var(--emerald)}
+.cat-chips .chip[aria-pressed="true"]{background:var(--gold); color:var(--onyx); border-color:var(--gold)}
+.cat-layout{display:grid; grid-template-columns:250px 1fr; gap:32px; align-items:start; margin-top:18px}
+.filters{position:sticky; top:84px; border:1px solid var(--line); background:var(--card); padding:18px 18px 8px}
+.filters fieldset{border:0; padding:0; margin:0 0 18px}
+.filters legend{font:600 18px/1.2 var(--serif); margin-bottom:8px}
+.filters label{display:flex; gap:9px; align-items:center; font-size:14.5px; padding:3px 0; cursor:pointer}
+.filters input[type=checkbox]{width:17px; height:17px; accent-color:var(--emerald)}
+.range{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.input,.select,textarea.input{width:100%; font:500 15.5px var(--sans); color:var(--ink); background:var(--field); border:1px solid var(--line); padding:11px 12px; border-radius:0}
+.select{appearance:none; background-image:linear-gradient(45deg,transparent 50%,var(--gold) 50%),linear-gradient(135deg,var(--gold) 50%,transparent 50%); background-position:calc(100% - 18px) 50%,calc(100% - 12px) 50%; background-size:6px 6px; background-repeat:no-repeat; padding-right:30px}
+.input:focus,.select:focus{outline:none; border-color:var(--gold); box-shadow:0 0 0 1px var(--gold)}
+.toolbar{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:18px}
+.toolbar .search{flex:1 1 260px; position:relative}
+.toolbar .search input{padding-left:38px}
+.toolbar .search svg{position:absolute; left:12px; top:50%; transform:translateY(-50%); width:17px; color:var(--ink-soft)}
+.toolbar .select{width:auto; min-width:190px}
+.found{font-size:14.5px; color:var(--ink-soft); margin-left:auto}
+.ftoggle{display:none}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:18px}
+.card{position:relative; background:var(--card); border:1px solid var(--line); display:flex; flex-direction:column; cursor:pointer; transition:border-color .2s}
+.card:hover{border-color:var(--gold)}
+.card .pic{aspect-ratio:1; display:grid; place-items:center; background:radial-gradient(circle at 50% 40%,#FFFFFF 0%,#F1EADB 75%)}
+:root[data-theme="dark"] .card .pic{background:radial-gradient(circle at 50% 40%,#2A3532 0%,#1B2522 75%)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .card .pic{background:radial-gradient(circle at 50% 40%,#2A3532 0%,#1B2522 75%)} }
+.card .pic svg{width:72%; height:72%}
+.card .body{padding:12px 14px 14px; display:flex; flex-direction:column; gap:4px; flex:1}
+.card h3{font:600 18.5px/1.2 var(--serif); margin:0}
+.card .meta{font-size:13px; color:var(--ink-soft)}
+.card .inst{font-size:13px; color:var(--ok)}
+.card .row{display:flex; justify-content:space-between; align-items:flex-end; margin-top:auto; padding-top:8px; gap:8px}
+.tag{position:absolute; top:10px; left:10px; background:var(--emerald); color:#F4EEE3; font:600 11.5px var(--sans); padding:4px 8px}
+.tag.hit{background:var(--bordeaux)}
+.tag.sold{background:#5d5d5d}
+.fav{position:absolute; top:6px; right:6px; width:38px; height:38px; display:grid; place-items:center; background:none; border:0; cursor:pointer; color:var(--cognac)}
+.fav svg{width:21px}
+.fav[aria-pressed="true"] svg{fill:var(--bordeaux); color:var(--bordeaux)}
+.more{display:flex; justify-content:center; margin-top:28px}
+.empty{border:1px dashed var(--line); padding:40px; text-align:center; color:var(--ink-soft)}
+@media (max-width:900px){
+  .cat-layout{grid-template-columns:1fr}
+  .filters{position:fixed; inset:auto 0 0 0; top:auto; z-index:75; max-height:78vh; overflow:auto; padding:20px 20px calc(20px + env(safe-area-inset-bottom,0px)); transform:translateY(105%); transition:transform .25s; box-shadow:0 -10px 40px rgba(0,0,0,.25)}
+  .filters.open{transform:none}
+  .ftoggle{display:inline-flex}
+  .grid{grid-template-columns:repeat(2,1fr); gap:10px}
+  .card h3{font-size:16.5px}
+  .card .row .meta{display:none}
+  .card .price{font-size:19px}
+  .card .body{padding:10px}
+}
+.filters .fclose{display:none}
+@media (max-width:900px){ .filters .fclose{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px} }
+
+/* vintage */
+.vintage{background:var(--sepia); color:var(--sepia-ink)}
+.vintage .h2{color:var(--sepia-ink)}
+.vintage .lead{color:var(--sepia-ink); opacity:.85}
+.vintage .card{background:transparent; border-color:rgba(122,82,51,.4)}
+.vintage .card .pic{background:radial-gradient(circle at 50% 40%,#F7EBD6 0%,#E3CFAE 80%)}
+:root[data-theme="dark"] .vintage .card .pic{background:radial-gradient(circle at 50% 40%,#3B2E22 0%,#2A2119 80%)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .vintage .card .pic{background:radial-gradient(circle at 50% 40%,#3B2E22 0%,#2A2119 80%)} }
+.vintage .card .meta{color:inherit; opacity:.75}
+.era{font:500 italic 15px var(--serif); color:var(--cognac)}
+:root[data-theme="dark"] .era{color:var(--gold-soft)}
+.sell{margin-top:56px; display:grid; grid-template-columns:1fr 1.1fr; gap:44px; border-top:1px solid rgba(122,82,51,.4); padding-top:48px}
+.sell h3{font:600 34px/1.1 var(--serif); margin:0 0 12px}
+.compare{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:18px 0}
+.compare div{border:1px solid rgba(122,82,51,.4); padding:14px}
+.compare b{font:600 20px var(--serif); display:block}
+@media (max-width:860px){ .sell{grid-template-columns:1fr} }
+
+/* forms */
+.form{display:grid; gap:14px}
+.form .two{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.lbl{display:block; font-size:13.5px; color:var(--ink-soft); margin-bottom:5px}
+.vintage .lbl{color:inherit; opacity:.8}
+.check{display:grid; grid-template-columns:20px 1fr; gap:10px; font-size:14px; align-items:start; cursor:pointer}
+.check input{width:18px; height:18px; margin:2px 0 0; accent-color:var(--emerald)}
+.ferr{color:var(--err); font-size:13.5px; min-height:0}
+.okbox{border:1px solid var(--gold); padding:24px; background:var(--card)}
+.okbox h4{font:600 26px/1.15 var(--serif); margin:0 0 6px}
+@media (max-width:520px){ .form .two{grid-template-columns:1fr} }
+
+/* pay & delivery */
+.pay{background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.split{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start}
+.methods{list-style:none; margin:0 0 26px; padding:0; border-top:1px solid var(--line)}
+.methods li{display:grid; grid-template-columns:1fr auto; gap:6px 16px; padding:14px 0; border-bottom:1px solid var(--line)}
+.methods b{font:600 19px/1.2 var(--serif)}
+.methods span{font-size:14px; color:var(--ink-soft); grid-column:1}
+.soon{align-self:start; font:600 11.5px var(--sans); padding:4px 8px; border:1px solid var(--gold); color:var(--cognac)}
+:root[data-theme="dark"] .soon{color:var(--gold-soft)}
+.calc{border:1px solid var(--gold); padding:26px; background:var(--paper); position:relative}
+.calc h3{font:600 28px/1.1 var(--serif); margin:0 0 16px}
+.terms{display:flex; gap:6px; flex-wrap:wrap; margin:6px 0 16px}
+.terms .chip{min-width:62px; text-align:center}
+.res{display:grid; grid-template-columns:1fr auto; gap:8px 16px; border-top:1px solid var(--line); padding-top:14px; font-size:15px}
+.res .big{font:700 30px/1 var(--serif); color:var(--ink)}
+table.t{width:100%; border-collapse:collapse; font-size:14.5px}
+table.t th,table.t td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
+table.t th{font:600 16px var(--serif)}
+.tscroll{overflow-x:auto}
+@media (max-width:900px){ .split{grid-template-columns:1fr} }
+.dres{margin-top:16px; display:grid; gap:10px}
+.dopt{border:1px solid var(--line); padding:14px 16px; display:grid; grid-template-columns:1fr auto; gap:2px 16px; background:var(--card)}
+.dopt b{font:600 18px var(--serif)}
+.dopt .c{font-weight:700; text-align:right}
+.dopt span{font-size:13.5px; color:var(--ink-soft)}
+ul.rules{padding-left:18px; color:var(--ink-soft); font-size:15px}
+ul.rules li{margin-bottom:6px}
+
+/* raffle */
+.raffle{background:var(--onyx); color:#EFE8DA}
+.raffle .h2{color:#F6EEDC}
+.raffle .lead{color:#C9BFAC}
+.raffle-grid{display:grid; grid-template-columns:1fr 1.15fr; gap:52px; align-items:start}
+.prize{border:1px solid rgba(198,162,90,.45); padding:30px; text-align:center; background:linear-gradient(180deg,rgba(15,59,51,.55),rgba(15,59,51,.15))}
+.prize svg{width:min(200px,60%); display:block; margin:0 auto 16px}
+.prize .lab{font:500 italic 20px var(--serif); color:var(--gold-soft); margin:0}
+.prize .what{font:600 25px/1.25 var(--serif); margin:6px 0 0; color:#F6EEDC}
+.steps{list-style:none; padding:0; margin:26px 0 0; counter-reset:s; text-align:left}
+.steps li{counter-increment:s; display:grid; grid-template-columns:36px 1fr; gap:12px; padding:11px 0; border-top:1px solid rgba(198,162,90,.2); color:#D8CFBD; font-size:15px}
+.steps li::before{content:counter(s); font:600 23px/1 var(--serif); color:var(--gold)}
+.raffle .input,.raffle .select{background:#1C1C1C; color:#F6EEDC; border-color:rgba(198,162,90,.4)}
+.raffle .lbl,.raffle .check{color:#D0C6B3}
+.raffle .okbox{background:rgba(15,59,51,.5); color:#EFE8DA}
+.raffle .ferr{color:#E59AA2}
+@media (max-width:860px){ .raffle-grid{grid-template-columns:1fr} }
+
+/* location */
+.plaque{display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--line)}
+.plaque > div{padding:36px}
+.plaque .addr{background:var(--emerald); color:#F1EADB; position:relative; overflow:hidden}
+.plaque .addr h3{font:600 clamp(30px,4.2vw,44px)/1.05 var(--serif); margin:0 0 6px; color:#F6EEDC}
+.plaque .addr p{margin:0 0 6px; color:#D8CFBD}
+.plaque .addr .btn{margin-top:18px; color:var(--onyx)}
+.plaque .addr > svg{position:absolute; right:-60px; bottom:-60px; width:240px; opacity:.2}
+.facts{list-style:none; margin:0 0 22px; padding:0}
+.facts li{padding:12px 0; border-bottom:1px solid var(--line); color:var(--ink-soft); font-size:15px}
+.facts b{display:block; color:var(--ink); font:600 20px/1.3 var(--serif)}
+@media (max-width:760px){ .plaque{grid-template-columns:1fr} .plaque > div{padding:26px 22px} }
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line); padding:4px 0}
+.faq summary{cursor:pointer; list-style:none; display:flex; justify-content:space-between; gap:16px; padding:16px 0; font:600 21px/1.25 var(--serif)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+"; font:400 26px/1 var(--sans); color:var(--gold); transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{margin:0 0 16px; color:var(--ink-soft); max-width:75ch}
+
+/* footer */
+footer{background:var(--emerald-deep); color:#BDB3A0; padding:52px 0 36px; font-size:14.5px}
+.foot{display:flex; flex-wrap:wrap; gap:26px 56px; align-items:flex-start}
+.foot nav{display:flex; flex-direction:column; gap:8px}
+.foot a,.foot .linkbtn{color:#E9E1CF; text-decoration:none; text-align:left}
+.foot a:hover,.foot .linkbtn:hover{color:var(--gold-soft)}
+.legal{margin-top:32px; padding-top:18px; border-top:1px solid rgba(198,162,90,.2); font-size:13px; color:#8F8775}
+
+/* overlays */
+.scrim{position:fixed; inset:0; background:rgba(5,15,13,.62); z-index:70}
+.modal{position:fixed; z-index:80; left:50%; top:50%; transform:translate(-50%,-50%); width:min(940px,calc(100% - 24px)); max-height:calc(100% - 40px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px)); overflow:auto; background:var(--paper); border:1px solid var(--gold); color:var(--ink)}
+.modal .x{position:sticky; float:right; top:0; right:0; width:46px; height:46px; background:var(--paper); border:0; border-left:1px solid var(--line); border-bottom:1px solid var(--line); cursor:pointer; font-size:24px; z-index:2}
+.pm{display:grid; grid-template-columns:1fr 1fr}
+.pm .pic{aspect-ratio:1; display:grid; place-items:center; background:radial-gradient(circle at 50% 40%,#FFFFFF 0%,#EFE6D4 80%)}
+:root[data-theme="dark"] .pm .pic{background:radial-gradient(circle at 50% 40%,#2A3532 0%,#18211E 80%)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pm .pic{background:radial-gradient(circle at 50% 40%,#2A3532 0%,#18211E 80%)} }
+.pm .pic svg{width:70%; height:70%}
+.pm .info{padding:30px 30px 26px}
+.pm h3{font:600 32px/1.1 var(--serif); margin:0 0 4px}
+.pm .art{font-size:13px; color:var(--ink-soft)}
+.specs{display:grid; grid-template-columns:auto 1fr; gap:6px 16px; font-size:14.5px; margin:16px 0; padding:14px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.specs dt{color:var(--ink-soft)}
+.specs dd{margin:0}
+.sizes{display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 14px}
+.sizes button{min-width:50px; padding:8px 6px; border:1px solid var(--line); background:var(--card); cursor:pointer; font-size:14px}
+.sizes button[aria-pressed="true"]{border-color:var(--emerald); background:var(--emerald); color:#F4EEE3}
+.sizes button[disabled]{opacity:.35; text-decoration:line-through; cursor:not-allowed}
+.pm .acts{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
+.story{background:var(--sepia); color:var(--sepia-ink); padding:14px 16px; font:500 italic 17px/1.5 var(--serif); margin:12px 0}
+@media (max-width:760px){ .pm{grid-template-columns:1fr} .pm .pic{aspect-ratio:4/3} .pm .info{padding:20px} .pm h3{font-size:27px} }
+.drawer{position:fixed; z-index:80; top:0; right:0; bottom:0; width:min(440px,100%); background:var(--paper); border-left:1px solid var(--gold); display:flex; flex-direction:column; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer header{display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid var(--line)}
+.drawer header h3{font:600 26px var(--serif); margin:0}
+.drawer .items{flex:1; overflow:auto; padding:8px 20px}
+.citem{display:grid; grid-template-columns:70px 1fr auto; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); align-items:center}
+.citem .pic{width:70px; height:70px; display:grid; place-items:center; background:var(--card); border:1px solid var(--line)}
+.citem .pic svg{width:80%}
+.citem b{font:600 17px/1.2 var(--serif); display:block}
+.citem small{color:var(--ink-soft); font-size:12.5px}
+.drawer footer{border-top:1px solid var(--line); padding:16px 20px; display:grid; gap:10px}
+.sum{display:flex; justify-content:space-between; align-items:baseline}
+.radio-list{display:grid; gap:8px}
+.radio{display:grid; grid-template-columns:20px 1fr; gap:10px; border:1px solid var(--line); padding:12px; cursor:pointer; background:var(--card)}
+.radio input{accent-color:var(--emerald); width:17px; height:17px; margin:2px 0 0}
+.radio b{font-weight:600}
+.radio span{display:block; font-size:13px; color:var(--ink-soft)}
+.radio.dis{opacity:.5; cursor:not-allowed}
+.co{padding:26px 28px}
+.co h3{font:600 32px/1.1 var(--serif); margin:0 0 16px}
+.co h4{font:600 21px var(--serif); margin:18px 0 8px}
+
+/* assistant */
+.fab{position:fixed; right:18px; bottom:calc(18px + env(safe-area-inset-bottom,0px)); z-index:65; width:60px; height:60px; border:0; cursor:pointer; background:var(--gold); color:var(--onyx); clip-path:polygon(29% 0,71% 0,100% 29%,100% 71%,71% 100%,29% 100%,0 71%,0 29%); display:grid; place-items:center}
+.fab svg{width:26px}
+.chat{position:fixed; right:18px; bottom:calc(88px + env(safe-area-inset-bottom,0px)); z-index:66; width:min(380px,calc(100% - 24px)); height:min(560px,calc(100% - 130px - env(safe-area-inset-top,0px))); background:var(--paper); border:1px solid var(--gold); display:flex; flex-direction:column; box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.chat header{background:var(--emerald); color:#F1EADB; padding:12px 14px; display:flex; align-items:center; gap:10px}
+.chat header b{font:600 19px var(--serif); display:block}
+.chat header small{font-size:12px; color:#CFC5B0}
+.chat header .icon-btn{margin-left:auto; color:#F1EADB}
+.msgs{flex:1; overflow:auto; padding:14px; display:flex; flex-direction:column; gap:10px}
+.msg{max-width:88%; padding:10px 12px; font-size:14.5px; line-height:1.5}
+.msg.bot{background:var(--card); border:1px solid var(--line); align-self:flex-start}
+.msg.me{background:var(--emerald); color:#F4EEE3; align-self:flex-end}
+.msg .mini{display:grid; grid-template-columns:44px 1fr; gap:8px; align-items:center; border-top:1px solid var(--line); padding-top:8px; margin-top:8px; cursor:pointer; text-align:left; background:none; border-left:0; border-right:0; border-bottom:0; width:100%}
+.msg .mini svg{width:44px; height:44px}
+.msg .mini b{font:600 15px var(--serif); display:block}
+.quick{display:flex; gap:6px; flex-wrap:nowrap; overflow-x:auto; padding:0 14px 10px}
+.quick button{flex:none}
+.quick button{border:1px solid var(--gold); background:none; padding:6px 10px; font-size:13px; cursor:pointer}
+.chat form{display:flex; border-top:1px solid var(--line)}
+.chat form input{flex:1; border:0; background:var(--field); color:var(--ink); padding:14px; font:15px var(--sans)}
+.chat form button{border:0; background:var(--gold); color:var(--onyx); padding:0 16px; cursor:pointer; font-weight:600}
+@media (max-width:520px){ .chat{right:12px; left:12px; width:auto} }
+
+.toast{position:fixed; left:50%; bottom:calc(96px + env(safe-area-inset-bottom,0px)); transform:translateX(-50%); z-index:90; background:var(--emerald); color:#F4EEE3; padding:12px 18px; border:1px solid var(--gold); font-size:14.5px; max-width:calc(100% - 40px)}
+
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .sun .ray{animation:none; transform:none} .filters{transition:none} }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mono" viewBox="0 0 64 64">
+      <polygon points="19,2 45,2 62,19 62,45 45,62 19,62 2,45 2,19" fill="none" stroke="#C6A25A" stroke-width="2"/>
+      <polygon points="21,7 43,7 57,21 57,43 43,57 21,57 7,43 7,21" fill="none" stroke="#C6A25A" stroke-width=".8"/>
+      <text x="32" y="40.5" text-anchor="middle" font-family="Cormorant, Georgia, serif" font-weight="600" font-size="22" fill="#E2C98F" letter-spacing="1">МП</text>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.3 4.5 6.8 4.5c2.1 0 3.6 1.2 4.2 2.5h2c.6-1.3 2.1-2.5 4.2-2.5 3.5 0 5.4 3.5 4.1 6.8-1.8 4.6-9.3 9.2-9.3 9.2z" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z" stroke="currentColor" stroke-width="1.8" fill="none"/><circle cx="9" cy="10.5" r="1.2" fill="currentColor"/><circle cx="12" cy="10.5" r="1.2" fill="currentColor"/><circle cx="15" cy="10.5" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Моя прелесть"><svg aria-hidden="true"><use href="#mono"/></svg><span>Моя прелесть</span></a>
+    <nav class="nav" id="nav">
+      <a href="#catalog" data-i18n="nav_catalog"></a>
+      <a href="#vintage" data-i18n="nav_vintage"></a>
+      <a href="#pay" data-i18n="nav_pay"></a>
+      <a href="#delivery" data-i18n="nav_delivery"></a>
+      <a href="#where" data-i18n="nav_where"></a>
+      <a href="#raffle" data-i18n="nav_raffle"></a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="favBtn" type="button" data-i18n-aria="favorites"><svg><use href="#i-heart"/></svg><span class="badge" id="favCount" hidden>0</span></button>
+      <button class="icon-btn" id="cartBtn" type="button" data-i18n-aria="cart"><svg><use href="#i-bag"/></svg><span class="badge" id="cartCount" hidden>0</span></button>
+      <div class="lang" role="group" aria-label="Язык / Тіл">
+        <button type="button" data-lang="kk" aria-pressed="false">KZ</button>
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      </div>
+      <button class="icon-btn burger" id="burger" type="button" aria-expanded="false" data-i18n-aria="menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" id="mnav" hidden></nav>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:0">
+    <svg class="sun" viewBox="0 0 1400 700" aria-hidden="true" id="sun"></svg>
+    <div class="wrap hero-inner">
+      <p class="kicker" data-i18n="kicker"></p>
+      <h1>Моя прелесть</h1>
+      <div class="rule" aria-hidden="true"><i></i></div>
+      <p class="opening" data-i18n="opening"></p>
+      <div class="count" id="count" role="timer">
+        <div class="cell"><div><b data-u="d">0</b><small data-i18n="days"></small></div></div>
+        <div class="cell"><div><b data-u="h">00</b><small data-i18n="hours"></small></div></div>
+        <div class="cell"><div><b data-u="m">00</b><small data-i18n="minutes"></small></div></div>
+        <div class="cell"><div><b data-u="s">00</b><small data-i18n="seconds"></small></div></div>
+      </div>
+      <p class="open-now" id="openNow" hidden data-i18n="open_now"></p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#catalog" data-i18n="cta_catalog"></a>
+        <a class="btn btn-line" href="#raffle" id="ctaRaffle" data-i18n="cta_raffle"></a>
+      </div>
+    </div>
+  </section>
+  <svg class="step-edge" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 26 L0 17 L520 17 L520 8 L560 8 L560 0 L640 0 L640 8 L680 8 L680 17 L1200 17 L1200 26 Z" fill="var(--paper)"/>
+    <path d="M0 17 L520 17 L520 8 L560 8 L560 0 L640 0 L640 8 L680 8 L680 17 L1200 17" fill="none" stroke="#C6A25A" stroke-width="1" vector-effect="non-scaling-stroke"/>
+  </svg>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" style="padding-top:72px">
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="h2" data-i18n="about_h"></h2>
+        <p data-i18n="about_p1"></p>
+        <p data-i18n="about_p2"></p>
+      </div>
+      <ul class="promises">
+        <li><h3 data-i18n="pr1_h"></h3><p data-i18n="pr1_p"></p></li>
+        <li><h3 data-i18n="pr2_h"></h3><p data-i18n="pr2_p"></p></li>
+        <li><h3 data-i18n="pr3_h"></h3><p data-i18n="pr3_p"></p></li>
+        <li><h3 data-i18n="pr4_h"></h3><p data-i18n="pr4_p"></p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section class="catalog" id="catalog">
+    <div class="wrap">
+      <h2 class="h2" data-i18n="cat_h"></h2>
+      <p class="lead" data-i18n="cat_lead"></p>
+      <div class="shows" id="shows" role="group"></div>
+      <div class="shows cat-chips" id="cats" role="group"></div>
+      <div class="cat-layout">
+        <aside class="filters" id="filters">
+          <div class="fclose"><b class="h2" style="font-size:26px;margin:0" data-i18n="filters"></b><button class="icon-btn" type="button" id="fClose" style="color:var(--ink)" data-i18n-aria="close"><svg><use href="#i-x"/></svg></button></div>
+          <fieldset><legend data-i18n="f_metal"></legend><div id="fMetal"></div></fieldset>
+          <fieldset><legend data-i18n="f_insert"></legend><div id="fInsert"></div></fieldset>
+          <fieldset><legend data-i18n="f_price"></legend>
+            <div class="range">
+              <input class="input" id="pMin" inputmode="numeric" data-i18n-ph="from">
+              <input class="input" id="pMax" inputmode="numeric" data-i18n-ph="to">
+            </div>
+          </fieldset>
+          <fieldset><label><input type="checkbox" id="fStock"> <span data-i18n="f_stock"></span></label></fieldset>
+          <button class="btn btn-sm" type="button" id="fReset" style="width:100%;margin-bottom:10px" data-i18n="f_reset"></button>
+          <button class="btn btn-gold btn-sm ftoggle" type="button" id="fApply" style="width:100%;margin-bottom:10px"></button>
+        </aside>
+        <div>
+          <div class="toolbar">
+            <div class="search"><svg><use href="#i-search"/></svg><input class="input" id="q" type="search" data-i18n-ph="search_ph" autocomplete="off"></div>
+            <select class="select" id="sort">
+              <option value="pop" data-i18n="s_pop"></option>
+              <option value="new" data-i18n="s_new"></option>
+              <option value="asc" data-i18n="s_asc"></option>
+              <option value="desc" data-i18n="s_desc"></option>
+            </select>
+            <button class="btn btn-sm ftoggle" type="button" id="fOpen" data-i18n="filters"></button>
+            <span class="found" id="found" aria-live="polite"></span>
+          </div>
+          <div class="grid" id="grid"></div>
+          <div class="more"><button class="btn" type="button" id="moreBtn" data-i18n="more"></button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VINTAGE -->
+  <section class="vintage" id="vintage">
+    <div class="wrap">
+      <h2 class="h2" data-i18n="vin_h"></h2>
+      <p class="lead" data-i18n="vin_lead"></p>
+      <div class="shows" id="eras" role="group"></div>
+      <div class="grid" id="vgrid" style="margin-top:14px"></div>
+      <div class="more"><button class="btn" type="button" id="vMore" data-i18n="vin_all"></button></div>
+
+      <div class="sell" id="sell">
+        <div>
+          <h3 data-i18n="sell_h"></h3>
+          <p data-i18n="sell_p"></p>
+          <div class="compare">
+            <div><b data-i18n="sell_buy_h"></b><span data-i18n="sell_buy_p"></span></div>
+            <div><b data-i18n="sell_com_h"></b><span data-i18n="sell_com_p"></span></div>
+          </div>
+          <p class="note" data-i18n="sell_note"></p>
+        </div>
+        <div id="sellBox">
+          <form class="form" id="sellForm" novalidate>
+            <div class="radio-list" style="grid-template-columns:1fr 1fr">
+              <label class="radio"><input type="radio" name="mode" value="buy" checked><b data-i18n="sell_buy_h"></b></label>
+              <label class="radio"><input type="radio" name="mode" value="com"><b data-i18n="sell_com_h"></b></label>
+            </div>
+            <div class="two">
+              <div><label class="lbl" for="sType" data-i18n="s_type"></label><select class="select" id="sType"></select></div>
+              <div><label class="lbl" for="sMetal" data-i18n="s_metal"></label><input class="input" id="sMetal" data-i18n-ph="s_metal_ph"></div>
+            </div>
+            <div><label class="lbl" for="sStory" data-i18n="s_story"></label><textarea class="input" id="sStory" rows="3" data-i18n-ph="s_story_ph"></textarea></div>
+            <div class="two">
+              <div><label class="lbl" for="sName" data-i18n="name"></label><input class="input" id="sName" autocomplete="given-name"></div>
+              <div><label class="lbl" for="sPhone" data-i18n="phone"></label><input class="input phone" id="sPhone" type="tel" inputmode="tel" placeholder="+7 (7__) ___-__-__"></div>
+            </div>
+            <label class="check"><input type="checkbox" id="sAgree"><span data-i18n="agree_pd"></span></label>
+            <div class="ferr" id="sErr" aria-live="polite"></div>
+            <button class="btn btn-dark" type="submit" data-i18n="s_send" style="justify-self:start"></button>
+            <p class="note" data-i18n="s_photos"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAY -->
+  <section class="pay" id="pay">
+    <div class="wrap">
+      <h2 class="h2" data-i18n="pay_h"></h2>
+      <p class="lead" data-i18n="pay_lead"></p>
+      <div class="split">
+        <div>
+          <ul class="methods">
+            <li><b data-i18n="m1_h"></b><span data-i18n="m1_p"></span></li>
+            <li><b data-i18n="m2_h"></b><span data-i18n="m2_p"></span></li>
+            <li><b>Kaspi.kz</b><span data-i18n="m3_p"></span><em class="soon" data-i18n="soon"></em></li>
+            <li><b data-i18n="m4_h"></b><span data-i18n="m4_p"></span></li>
+          </ul>
+          <h3 class="h2" style="font-size:28px" data-i18n="prepay_h"></h3>
+          <div class="tscroll"><table class="t">
+            <thead><tr><th data-i18n="pp_c"></th><th data-i18n="pp_p"></th></tr></thead>
+            <tbody>
+              <tr><td data-i18n="pp1_c"></td><td data-i18n="pp1_p"></td></tr>
+              <tr><td data-i18n="pp2_c"></td><td data-i18n="pp2_p"></td></tr>
+              <tr><td data-i18n="pp3_c"></td><td data-i18n="pp3_p"></td></tr>
+              <tr><td data-i18n="pp4_c"></td><td data-i18n="pp4_p"></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="calc" id="calc">
+          <h3 data-i18n="calc_h"></h3>
+          <label class="lbl" for="cSum" data-i18n="calc_sum"></label>
+          <input class="input" id="cSum" inputmode="numeric" value="450 000">
+          <div class="lbl" style="margin-top:14px" data-i18n="calc_term"></div>
+          <div class="terms" id="terms" role="group"></div>
+          <div class="res">
+            <span data-i18n="calc_month"></span><span class="big" id="cMonth"></span>
+            <span data-i18n="calc_total"></span><b id="cTotal"></b>
+            <span data-i18n="calc_over"></span><b id="cOver"></b>
+          </div>
+          <p class="note" style="margin-top:14px" data-i18n="calc_note"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section id="delivery">
+    <div class="wrap split">
+      <div>
+        <h2 class="h2" data-i18n="del_h"></h2>
+        <p class="lead" data-i18n="del_lead"></p>
+        <ul class="rules">
+          <li data-i18n="dr1"></li><li data-i18n="dr2"></li><li data-i18n="dr3"></li><li data-i18n="dr4"></li><li data-i18n="dr5"></li>
+        </ul>
+      </div>
+      <div class="calc">
+        <h3 data-i18n="dcalc_h"></h3>
+        <div class="two" style="display:grid;grid-template-columns:1.3fr 1fr;gap:10px">
+          <div><label class="lbl" for="dCity" data-i18n="city"></label><select class="select" id="dCity"></select></div>
+          <div><label class="lbl" for="dSum" data-i18n="dsum"></label><input class="input" id="dSum" inputmode="numeric" value="450 000"></div>
+        </div>
+        <div class="dres" id="dRes"></div>
+        <p class="note" style="margin-top:12px" data-i18n="dnote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAFFLE -->
+  <section class="raffle" id="raffle">
+    <div class="wrap">
+      <h2 class="h2" data-i18n="raffle_h"></h2>
+      <p class="lead" id="raffleLead" data-i18n="raffle_lead"></p>
+      <div class="raffle-grid">
+        <div class="prize">
+          <svg viewBox="0 0 240 300" aria-hidden="true">
+            <line x1="120" y1="0" x2="120" y2="44" stroke="#C6A25A" stroke-width="2"/>
+            <circle cx="120" cy="50" r="7" fill="none" stroke="#C6A25A" stroke-width="2"/>
+            <g stroke="#C6A25A" stroke-width="1.4" fill="none"><path d="M120 70 L60 130 L120 290 L180 130 Z"/><path d="M120 84 L74 132 L120 262 L166 132 Z"/><path d="M60 130 L180 130"/><path d="M90 100 L150 100"/><path d="M120 70 L120 130"/></g>
+            <polygon points="104,140 136,140 146,170 120,226 94,170" fill="#0F6B57" stroke="#E2C98F" stroke-width="1.6"/>
+            <path d="M104 140 L120 170 L136 140 M94 170 L146 170 M120 170 L120 226" stroke="#7FC7B0" stroke-width=".8" fill="none" opacity=".8"/>
+            <g fill="#E2C98F"><circle cx="120" cy="100" r="3.2"/><circle cx="90" cy="130" r="2.6"/><circle cx="150" cy="130" r="2.6"/><circle cx="120" cy="246" r="3"/></g>
+          </svg>
+          <p class="lab" data-i18n="prize_label"></p>
+          <p class="what" data-i18n="prize_what"></p>
+          <ol class="steps"><li data-i18n="step1"></li><li data-i18n="step2"></li><li data-i18n="step3"></li></ol>
+        </div>
+        <div id="raffleBox">
+          <form class="form" id="raffleForm" novalidate>
+            <div><label class="lbl" for="rName" data-i18n="name"></label><input class="input" id="rName" autocomplete="given-name" maxlength="60"></div>
+            <div><label class="lbl" for="rPhone" data-i18n="phone"></label><input class="input phone" id="rPhone" type="tel" inputmode="tel" placeholder="+7 (7__) ___-__-__"></div>
+            <div><label class="lbl" for="rCity" data-i18n="city"></label><select class="select" id="rCity"></select></div>
+            <label class="check"><input type="checkbox" id="rAge"><span data-i18n="c_age"></span></label>
+            <label class="check"><input type="checkbox" id="rAgree"><span><span data-i18n="c_agree"></span> <button type="button" class="linkbtn" data-open="rules" data-i18n="rules_link"></button></span></label>
+            <div class="ferr" id="rErr" aria-live="polite"></div>
+            <button class="btn btn-gold" type="submit" data-i18n="r_submit" style="justify-self:start"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE -->
+  <section id="where">
+    <div class="wrap">
+      <h2 class="h2" data-i18n="where_h"></h2>
+      <div class="plaque">
+        <div class="addr">
+          <h3 data-i18n="where_place"></h3>
+          <p id="addrLine"></p>
+          <p data-i18n="where_hours_l"></p>
+          <a class="btn btn-gold" id="gisLink" target="_blank" rel="noopener" data-i18n="where_2gis"></a>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#mono"/></svg>
+        </div>
+        <div id="bookBox">
+          <h3 class="h2" style="font-size:28px" data-i18n="book_h"></h3>
+          <p class="muted" style="margin-top:0" data-i18n="book_p"></p>
+          <form class="form" id="bookForm" novalidate>
+            <div class="two">
+              <div><label class="lbl" for="bDate" data-i18n="b_date"></label><input class="input" id="bDate" type="date"></div>
+              <div><label class="lbl" for="bTime" data-i18n="b_time"></label><select class="select" id="bTime"></select></div>
+            </div>
+            <div class="two">
+              <div><label class="lbl" for="bName" data-i18n="name"></label><input class="input" id="bName" autocomplete="given-name"></div>
+              <div><label class="lbl" for="bPhone" data-i18n="phone"></label><input class="input phone" id="bPhone" type="tel" inputmode="tel" placeholder="+7 (7__) ___-__-__"></div>
+            </div>
+            <div><label class="lbl" for="bNote" data-i18n="b_note"></label><input class="input" id="bNote" data-i18n-ph="b_note_ph"></div>
+            <label class="check"><input type="checkbox" id="bAgree"><span data-i18n="agree_pd"></span></label>
+            <div class="ferr" id="bErr" aria-live="polite"></div>
+            <button class="btn btn-dark" type="submit" data-i18n="b_send" style="justify-self:start"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" style="border-top:1px solid var(--line)">
+    <div class="wrap" style="max-width:900px">
+      <h2 class="h2" data-i18n="faq_h"></h2>
+      <div id="faqList"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="#top"><svg aria-hidden="true" style="width:34px;height:34px"><use href="#mono"/></svg><span>Моя прелесть</span></a>
+      <nav><a id="ftWa" target="_blank" rel="noopener">WhatsApp</a><a id="ftIg" target="_blank" rel="noopener">Instagram</a><a id="ftTel"></a></nav>
+      <nav><button type="button" class="linkbtn" data-open="rules" data-i18n="rules_link"></button><button type="button" class="linkbtn" data-open="privacy" data-i18n="privacy"></button><button type="button" class="linkbtn" data-open="offer" data-i18n="offer"></button></nav>
+      <nav><a href="#catalog" data-i18n="nav_catalog"></a><a href="#vintage" data-i18n="nav_vintage"></a><a href="#faq" data-i18n="faq_h"></a></nav>
+    </div>
+    <p class="legal" id="legal"></p>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" hidden><button class="x" type="button" id="mClose" data-i18n-aria="close">×</button><div id="mBody"></div></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" hidden>
+  <header><h3 id="dTitle"></h3><button class="icon-btn" type="button" id="dClose" style="color:var(--ink)" data-i18n-aria="close"><svg><use href="#i-x"/></svg></button></header>
+  <div class="items" id="dItems"></div>
+  <footer id="dFoot"></footer>
+</aside>
+
+<button class="fab" id="fab" type="button" data-i18n-aria="assistant"><svg><use href="#i-chat"/></svg></button>
+<div class="chat" id="chat" role="dialog" hidden>
+  <header><svg style="width:34px;height:34px;flex:none"><use href="#mono"/></svg><div><b data-i18n="as_name"></b><small id="asStatus"></small></div><button class="icon-btn" type="button" id="chatClose" data-i18n-aria="close"><svg><use href="#i-x"/></svg></button></header>
+  <div class="msgs" id="msgs" aria-live="polite"></div>
+  <div class="quick" id="quick"></div>
+  <form id="chatForm"><input id="chatIn" autocomplete="off" data-i18n-ph="as_ph"><button type="submit" data-i18n="send"></button></form>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script>
+/* =====================================================================
+   НАСТРОЙКИ САЙТА — заполнить перед запуском
+   ===================================================================== */
+var CONFIG = {
+  whatsapp: "77000000000",            // номер WhatsApp бутика, только цифры, без +
+  phoneDisplay: "+7 (700) 000-00-00", // телефон для показа на сайте
+  instagram: "https://instagram.com/", // ссылка на Instagram
+  address: { ru: "ЦУМ, Павлодар. Этаж и номер бутика — уточняются", kk: "ЦУМ, Павлодар. Қабат пен бутик нөмірі — нақтыланады" },
+  gis: "https://2gis.kz/pavlodar/search/%D0%A6%D0%A3%D0%9C",
+  legal: { ru: "Ювелирный бутик «Моя прелесть», Павлодар. [ТОО / ИП, БИН, юридический адрес — добавить]", kk: "«Моя прелесть» зергерлік бутигі, Павлодар. [ЖШС / ЖК, БСН, заңды мекенжай — қосу]" },
+  openAt: "2027-12-12T10:00:00+05:00",      // открытие бутика (время Павлодара, UTC+5)
+  raffleEnd: "2027-12-11T23:59:59+05:00",   // окончание регистрации в розыгрыше
+  raffleDraw: "2027-12-12T18:00:00+05:00",  // время розыгрыша
+  hours: [10, 22],                          // часы работы продавцов в чате (по ЦУМ)
+  freeShipFrom: 300000,                     // бесплатная доставка от суммы, ₸
+  insurance: 0.01,                          // страховка при платной доставке, доля от суммы
+  // Наценка Halyk Bank за рассрочку по срокам, % — УСЛОВНЫЕ значения, заменить на тарифы банка
+  halykMarkup: { 2: 3, 3: 5, 6: 9, 12: 18 },
+  kaspiEnabled: false,                      // включить, когда Kaspi будет подключён
+  // Адреса серверных обработчиков. Пока null — заявки уходят в WhatsApp бутика.
+  endpoints: { order: null, raffle: null, vintage: null, booking: null }
+};
+</script>
+<script>
+var I18N = {
+ru:{
+title:"Моя прелесть — ювелирный дом в Павлодаре",
+nav_catalog:"Коллекции", nav_vintage:"Винтаж", nav_pay:"Оплата", nav_delivery:"Доставка", nav_where:"Бутик", nav_raffle:"Розыгрыш",
+favorites:"Избранное", cart:"Корзина", menu:"Меню", close:"Закрыть", send:"Отправить",
+kicker:"Ювелирный дом в Павлодаре", opening:"Открываемся 12 декабря 2027 года в ЦУМ",
+days:"дней", hours:"часов", minutes:"минут", seconds:"секунд", open_now:"Мы открыты",
+cta_catalog:"Смотреть коллекции", cta_raffle:"Участвовать в розыгрыше", cta_raffle_res:"Итоги розыгрыша",
+about_h:"Украшения, которые становятся историей",
+about_p1:"«Моя прелесть» — ювелирный бутик в центре Павлодара. Мы собрали современные коллекции из золота, платины и серебра и отдельную витрину винтажа: предметы ар-деко, ретро и советской классики, каждый в единственном экземпляре.",
+about_p2:"Любое изделие можно примерить в бутике, оформить в рассрочку или получить с доставкой по всему Казахстану.",
+pr1_h:"Подлинность", pr1_p:"Государственное пробирное клеймо и сертификат на каждое изделие.",
+pr2_h:"Винтаж с историей", pr2_p:"Около 50 предметов с описанием эпохи, клейм и происхождения.",
+pr3_h:"Рассрочка до 12 месяцев", pr3_p:"Через Halyk Bank, оформление онлайн или в бутике.",
+pr4_h:"Доставка по Казахстану", pr4_p:"Бесплатно для заказов от 300 000 ₸, с полной страховкой.",
+cat_h:"Коллекции", cat_lead:"Около 500 изделий из золота 585 и 750, платины и серебра. Выберите подборку или настройте фильтры.",
+filters:"Фильтры", f_metal:"Металл", f_insert:"Вставка", f_price:"Цена, ₸", from:"от", to:"до", f_stock:"Только в наличии в бутике", f_reset:"Сбросить фильтры", f_show:"Показать: {n}",
+search_ph:"Название или артикул", s_pop:"Сначала популярные", s_new:"Сначала новинки", s_asc:"Сначала дешевле", s_desc:"Сначала дороже",
+more:"Показать ещё", found:"Найдено: {n}", nothing:"По этим условиям ничего не нашлось. Сбросьте часть фильтров или напишите нам — подберём вручную.",
+sh_all:"Все изделия", sh_new:"Новинки", sh_hit:"Хиты", sh_gift:"Подарок до 300 000 ₸", sh_wedding:"Обручальные", sh_ny:"К Новому году", sh_fav:"Избранное",
+c_all:"Все категории", c_ring:"Кольца", c_wedding:"Обручальные кольца", c_earrings:"Серьги", c_pendant:"Подвески", c_bracelet:"Браслеты", c_brooch:"Броши", c_set:"Комплекты", c_men:"Мужские",
+n_ring:"Кольцо", n_wedding:"Обручальное кольцо", n_earrings:"Серьги", n_pendant:"Подвеска", n_bracelet:"Браслет", n_brooch:"Брошь", n_set:"Комплект", n_men:"Перстень",
+mt_y585:"Жёлтое золото 585", mt_r585:"Красное золото 585", mt_w585:"Белое золото 585", mt_y750:"Жёлтое золото 750", mt_w750:"Белое золото 750", mt_pt:"Платина 950", mt_ag:"Серебро 925",
+in_diamond:"Бриллианты", in_emerald:"Изумруд", in_sapphire:"Сапфир", in_ruby:"Рубин", in_pearl:"Жемчуг", in_none:"Без вставки",
+tag_new:"Новинка", tag_hit:"Хит", sold:"Продано", unique:"Единственный экземпляр",
+per_month:"от {x} ₸/мес в рассрочку",
+vin_h:"Винтаж с историей", vin_lead:"Каждый предмет прошёл оценку специалиста бутика и существует в единственном экземпляре. Проданные вещи остаются в архиве — как напоминание о том, что хорошее не ждёт.",
+vin_all:"Вся винтажная коллекция", vin_less:"Свернуть",
+era_all:"Все эпохи", era_vict:"Викторианская эпоха", era_nouveau:"Ар-нуво", era_deco:"Ар-деко", era_retro:"Ретро, 1940-е", era_mid:"Середина века", era_ussr:"Советская классика",
+cond_1:"Отличное", cond_2:"Очень хорошее", cond_3:"Хорошее, есть следы времени",
+sell_h:"Продать или сдать на комиссию", sell_p:"У вашей драгоценности может быть новая история. Пришлите описание — оценщик бутика ответит в WhatsApp в течение 1–2 рабочих дней.",
+sell_buy_h:"Продать сразу", sell_buy_p:"Деньги в день сделки, сумма ниже рыночной.",
+sell_com_h:"Сдать на комиссию", sell_com_p:"Комиссия бутика 20–30 %, договор на 90 дней, выплата после продажи.",
+sell_note:"Предварительная оценка по фото не является предложением. Окончательная цена — после осмотра в бутике. Принимаем изделия из золота, платины и серебра; при сдаче нужно удостоверение личности.",
+s_type:"Что за изделие", s_metal:"Металл и проба", s_metal_ph:"Например, золото 583", s_story:"Возраст и история", s_story_ph:"Откуда изделие, примерный год, есть ли чеки и сертификаты",
+name:"Имя", phone:"Телефон", city:"Город", agree_pd:"Даю согласие на обработку персональных данных",
+s_send:"Отправить на оценку", s_photos:"Фото (общий вид, клейма, камни крупно) вы отправите следующим сообщением в WhatsApp.",
+pay_h:"Оплата и рассрочка", pay_lead:"Заказы с доставкой оплачиваются заранее. Для самовывоза можно оплатить в бутике или забронировать изделие.",
+m1_h:"Банковская карта", m1_p:"Visa и Mastercard через интернет-эквайринг Halyk Bank.",
+m2_h:"Рассрочка Halyk Bank", m2_p:"От 2 до 12 месяцев, с наценкой банка. Решение онлайн за несколько минут.",
+m3_p:"Kaspi Pay, Kaspi QR и Kaspi Рассрочка.", soon:"скоро",
+m4_h:"В бутике", m4_p:"Наличные, карта или QR при самовывозе. Безналичный расчёт для юрлиц и ИП.",
+prepay_h:"Предоплата", pp_c:"Ситуация", pp_p:"Сколько оплатить заранее",
+pp1_c:"Изделие в наличии, доставка", pp1_p:"100 % — стоимость изделия; доставка бесплатна от 300 000 ₸",
+pp2_c:"Самовывоз из бутика", pp2_p:"Без предоплаты; для изделий от 1 000 000 ₸ — бронь 10 %",
+pp3_c:"Под заказ, гравировка", pp3_p:"30–50 %, остаток перед отправкой или в бутике",
+pp4_c:"Винтаж", pp4_p:"Бронь 10–20 % на 3 дня, остаток при выкупе",
+calc_h:"Калькулятор рассрочки", calc_sum:"Стоимость изделия, ₸", calc_term:"Срок", calc_month:"Платёж в месяц", calc_total:"Итого к оплате", calc_over:"Переплата",
+calc_note:"Расчёт предварительный. Рассрочку предоставляет Halyk Bank, итоговые условия — в договоре с банком. Цена в рассрочку выше цены при полной оплате на размер наценки банка.",
+months:"мес",
+del_h:"Доставка по Казахстану", del_lead:"Отправляем из Павлодара в любой город Казахстана. Доставка в другие страны пока недоступна — изделия можно купить лично в бутике.",
+dr1:"Каждое отправление застраховано на полную стоимость.", dr2:"Вручение лично получателю по удостоверению личности.", dr3:"Фирменный футляр внутри неприметной коробки без логотипа.", dr4:"Номер отслеживания придёт в WhatsApp в день отправки.", dr5:"Отправка в течение 1 рабочего дня после оплаты; изделия с гравировкой — через 5–14 дней.",
+dcalc_h:"Сроки и стоимость", dsum:"Сумма заказа, ₸", dnote:"Тарифы курьерских служб ориентировочные и уточняются при подтверждении заказа.",
+d_pickup:"Самовывоз из бутика в ЦУМ", d_pickup_t:"В день заказа", d_bcourier:"Курьер бутика, с примеркой", d_bcourier_t:"В день заказа или на следующий день, интервал 2–3 часа", d_bcourier_aksu:"По согласованию",
+d_service:"Курьерская служба с объявленной ценностью", d_post:"Казпочта, EMS с объявленной ценностью", free:"Бесплатно", dd:"{a}–{b} дн.", d_ins:"включая страховку",
+other_city:"Другой населённый пункт",
+raffle_h:"Розыгрыш в день открытия", raffle_lead:"Зарегистрируйтесь до 11 декабря, и 12 декабря в 18:00 мы разыграем украшение из нашей коллекции. Участие бесплатное, покупка не нужна.",
+raffle_closed:"Регистрация завершена. Розыгрыш — 12 декабря в 18:00 в бутике и в прямом эфире в Instagram.", raffle_done:"Розыгрыш состоялся. Победитель получил сообщение в WhatsApp. Спасибо всем, кто был с нами на открытии!",
+prize_label:"Главный приз", prize_what:"Украшение в стиле ар-деко стоимостью 200 000 ₸",
+step1:"Заполните форму и отправьте заявку в WhatsApp", step2:"Получите номер участника в ответном сообщении", step3:"Приходите в бутик 12 декабря или смотрите трансляцию в Instagram",
+c_age:"Мне есть 18 лет", c_agree:"Принимаю правила розыгрыша и даю согласие на обработку персональных данных.", rules_link:"Правила розыгрыша", r_submit:"Участвовать",
+where_h:"Бутик в ЦУМ", where_place:"ЦУМ, Павлодар", where_hours_l:"Ежедневно по режиму ЦУМ, 10:00–22:00", where_2gis:"Открыть в 2ГИС",
+book_h:"Примерка и консультация", book_p:"Выберите время — отложим к вашему приходу до 5 изделий из каталога. Можно прийти и без записи.",
+b_date:"Дата", b_time:"Время", b_note:"Что хотите посмотреть", b_note_ph:"Артикулы или пожелания", b_send:"Записаться",
+faq_h:"Частые вопросы", privacy:"Политика конфиденциальности", offer:"Публичная оферта",
+assistant:"Онлайн-помощник", as_name:"Помощник «Моей прелести»", as_ph:"Напишите вопрос", as_on:"Продавцы на связи до 22:00", as_off:"Продавцы ответят с 10:00",
+// cards & modal
+sp_art:"Артикул", sp_metal:"Металл", sp_weight:"Вес", sp_insert:"Вставка", sp_era:"Эпоха", sp_origin:"Происхождение", sp_cond:"Состояние", sp_exp:"Экспертиза", sp_exp_v:"Заключение оценщика бутика", g:"г",
+choose_size:"Размер", size_guide:"Как узнать размер", in_stock:"Есть в бутике", to_order:"Под заказ, 7–14 дней",
+to_cart:"В корзину", buy_inst:"Рассчитать рассрочку", try_on:"Примерить в бутике", added_cart:"Добавлено в корзину", added_fav:"Добавлено в избранное", removed_fav:"Убрано из избранного",
+del_to:"Доставка в {c}: {t}", reserve_v:"Забронировать",
+size_text:"Обмотайте палец ниткой у основания, отметьте место пересечения и измерьте длину линейкой. Разделите на 3,14 — это диаметр в миллиметрах и ваш размер. Например, 17,5 мм — размер 17,5. Мерьте вечером, когда пальцы чуть шире.",
+// cart & checkout
+cart_h:"Корзина", fav_h:"Избранное", cart_empty:"Корзина пока пуста. Загляните в коллекции или винтаж.", fav_empty:"Нажмите на сердце на карточке, чтобы сохранить изделие.", total:"Итого", checkout:"Оформить заказ", remove:"Удалить", size_s:"размер",
+co_h:"Оформление заказа", co_contacts:"Контакты", co_delivery:"Получение", co_pay:"Оплата", co_addr:"Адрес доставки", co_addr_ph:"Улица, дом, квартира",
+pay_card:"Картой онлайн", pay_card_p:"Ссылка на оплату Halyk придёт в WhatsApp после подтверждения наличия", pay_inst:"Рассрочка Halyk Bank", pay_inst_p:"Заявка в банк после подтверждения заказа",
+pay_kaspi:"Kaspi", pay_kaspi_p:"Скоро", pay_shop:"В бутике при получении", pay_shop_p:"Только для самовывоза",
+co_submit:"Подтвердить заказ", co_note:"Продавец проверит наличие и пришлёт ссылку на оплату. Заказы с доставкой оплачиваются заранее.",
+co_ok_h:"Заказ {n} сформирован", co_ok_p:"Отправьте сообщение в WhatsApp, которое открылось в новом окне, — продавец подтвердит наличие и пришлёт ссылку на оплату. В нерабочее время ответим с 10:00.", co_ok_srv:"Мы получили заказ и свяжемся с вами в WhatsApp.", wa_again:"Открыть WhatsApp ещё раз",
+// validation & results
+e_name:"Укажите имя", e_phone:"Введите номер полностью: +7 и 10 цифр", e_city:"Выберите город", e_check:"Подтвердите согласие", e_check2:"Подтвердите возраст и согласие с правилами", e_size:"Выберите размер", e_addr:"Укажите адрес доставки", e_date:"Выберите дату не раньше открытия бутика",
+r_ok_h:"Заявка готова", r_ok_p:"Отправьте сообщение в WhatsApp — в ответ придёт ваш номер участника. Ждём вас 12 декабря в 18:00 в бутике в ЦУМ.",
+s_ok_h:"Описание готово", s_ok_p:"Отправьте сообщение в WhatsApp и приложите фото. Оценщик ответит в течение 1–2 рабочих дней.",
+b_ok_h:"Запись почти готова", b_ok_p:"Отправьте сообщение в WhatsApp — продавец подтвердит время.",
+srv_ok:"Готово! Мы свяжемся с вами в WhatsApp.",
+// docs
+rules_h:"Правила розыгрыша",
+rules_list:["Организатор — ювелирный бутик «Моя прелесть», Павлодар.","Регистрация с 1 ноября по 11 декабря 2027 года, 23:59 по времени Павлодара.","Участвовать могут люди старше 18 лет. Один номер телефона — одна регистрация.","Участие бесплатное, покупка не требуется.","Главный приз — украшение из коллекции бутика стоимостью 200 000 ₸.","Победителя выберет генератор случайных чисел 12 декабря 2027 года в 18:00 в бутике, с трансляцией в Instagram.","Приз выдаётся в бутике в течение 30 дней по удостоверению личности."],
+rules_note:"Черновик. Полная версия, включая порядок уплаты налога с приза, будет опубликована после проверки юристом.",
+privacy_list:["Мы собираем имя, телефон, город и адрес доставки только для обработки заказов, записи, оценки изделий и участия в розыгрыше.","Данные хранятся на серверах в Казахстане и не передаются третьим лицам, кроме банка (для оплаты и рассрочки) и службы доставки.","Вы можете отозвать согласие, написав нам в WhatsApp."],
+offer_list:["Продавец — ювелирный бутик «Моя прелесть» (реквизиты указаны внизу страницы).","Цены указаны в тенге. Заказ подтверждается после проверки наличия и оплаты.","Гарантия на изделия — 12 месяцев. Возврат и обмен — по законодательству Республики Казахстан о защите прав потребителей.","Рассрочку и кредит предоставляет банк на своих условиях."],
+docs_note:"Черновик документа. Перед запуском сайта согласовать с юристом.",
+faq:[
+["Как проверить подлинность изделия?","На каждом изделии стоит государственное пробирное клеймо, к каждой покупке прилагается сертификат с номером. Для винтажа — заключение оценщика, а для дорогих изделий — геммологической лаборатории."],
+["Как оформить рассрочку?","Выберите «Рассрочка Halyk Bank» при оформлении заказа или скажите продавцу в бутике. Срок — от 2 до 12 месяцев, банк добавляет наценку, итоговую сумму видно в калькуляторе до оформления."],
+["Можно ли заказать доставку в другую страну?","Пока нет: доставляем только по Казахстану. Гости из других стран могут купить изделия лично в бутике в ЦУМ."],
+["Сколько стоит и сколько идёт доставка?","По Павлодару — бесплатно в день заказа или на следующий день. По Казахстану — 1–4 дня в крупные города, 3–10 дней в отдалённые населённые пункты. Бесплатно для заказов от 300 000 ₸."],
+["Можно ли вернуть украшение?","Изделие с браком заменим или вернём деньги по гарантии. Ювелирные изделия надлежащего качества по закону, как правило, обмену и возврату не подлежат — поэтому приглашаем на примерку."],
+["Как сдать винтаж на комиссию?","Заполните форму в разделе «Винтаж» и отправьте фото в WhatsApp. После очной оценки заключаем договор на 90 дней, комиссия бутика 20–30 %, деньги — после продажи."],
+["Делаете ли вы гравировку?","Да, на большинстве изделий. Срок — 5–14 дней, напишите текст в комментарии к заказу или скажите продавцу."]
+],
+// assistant
+as_hello:"Здравствуйте! Я помощник бутика «Моя прелесть». Помогу подобрать украшение, рассчитать рассрочку и доставку, расскажу о винтаже и розыгрыше.",
+q_pick:"Подобрать подарок", q_size:"Размер кольца", q_inst:"Рассрочка", q_del:"Доставка", q_vin:"Сдать винтаж", q_raffle:"Розыгрыш", q_where:"Где бутик", q_human:"Позвать продавца",
+as_pick_q:"Напишите, для кого украшение, что ищете и бюджет. Например: «серьги до 400 000» или «кольцо с изумрудом».",
+as_found:"Вот что могу предложить:", as_none:"Точных совпадений нет. Посмотрите подборку в каталоге или позовите продавца — подберём вручную.",
+as_inst:"Рассрочка Halyk Bank — от 2 до 12 месяцев, банк добавляет наценку. Например, изделие за {p} ₸ на 12 месяцев — около {m} ₸ в месяц, итого {t} ₸. Точные условия покажет банк.",
+as_del:"Доставляем только по Казахстану: по Павлодару — бесплатно в день заказа, в крупные города — 1–4 дня, в отдалённые — до 10 дней. Бесплатно от 300 000 ₸, всё застраховано.",
+as_vin:"Винтаж можно продать сразу или сдать на комиссию (20–30 %, договор на 90 дней). Сумму оценки называет только оценщик бутика после осмотра. Заполните форму — и пришлите фото в WhatsApp.",
+as_raffle:"Регистрация в розыгрыше — до 11 декабря 2027 года, участие бесплатное. Розыгрыш 12 декабря в 18:00 в бутике и в эфире Instagram. Главный приз — украшение за 200 000 ₸.",
+as_where:"Мы в ЦУМ Павлодара, работаем по режиму ЦУМ с 10:00 до 22:00. Открытие — 12 декабря 2027 года. Этаж и номер бутика объявим ближе к открытию.",
+as_pay:"Оплата: картой онлайн через Halyk Bank, рассрочка Halyk до 12 месяцев, в бутике — наличными, картой или QR. Kaspi подключим в ближайшее время.",
+as_ret:"Изделие с браком заменим или вернём деньги по гарантии 12 месяцев. Качественные ювелирные изделия, как правило, не подлежат обмену и возврату, поэтому советуем примерку в бутике.",
+as_human:"Передаю диалог продавцу. Нажмите кнопку — откроется WhatsApp бутика.", as_human_btn:"Написать в WhatsApp",
+as_dunno:"Я не уверен, что правильно понял. Выберите тему ниже или позовите продавца.",
+go_section:"Открыть раздел"
+},
+kk:{
+title:"Моя прелесть — Павлодардағы зергерлік үй",
+nav_catalog:"Коллекциялар", nav_vintage:"Винтаж", nav_pay:"Төлем", nav_delivery:"Жеткізу", nav_where:"Бутик", nav_raffle:"Ұтыс ойыны",
+favorites:"Таңдаулылар", cart:"Себет", menu:"Мәзір", close:"Жабу", send:"Жіберу",
+kicker:"Павлодардағы зергерлік үй", opening:"2027 жылғы 12 желтоқсанда ЦУМ-да ашыламыз",
+days:"күн", hours:"сағат", minutes:"минут", seconds:"секунд", open_now:"Біз ашықпыз",
+cta_catalog:"Коллекцияларды көру", cta_raffle:"Ұтыс ойынына қатысу", cta_raffle_res:"Ұтыс ойынының қорытындысы",
+about_h:"Тарихқа айналатын әшекейлер",
+about_p1:"«Моя прелесть» — Павлодар орталығындағы зергерлік бутик. Біз алтын, платина және күмістен жасалған заманауи коллекцияларды және бөлек винтаж сөресін жинадық: ар-деко, ретро және кеңестік классика бұйымдары, әрқайсысы бір данада.",
+about_p2:"Кез келген бұйымды бутикте киіп көруге, бөліп төлеуге рәсімдеуге немесе бүкіл Қазақстан бойынша жеткізумен алуға болады.",
+pr1_h:"Түпнұсқалық", pr1_p:"Әр бұйымда мемлекеттік сынама таңбасы және сертификат бар.",
+pr2_h:"Тарихы бар винтаж", pr2_p:"Дәуірі, таңбалары мен шығу тегі сипатталған 50-ге жуық бұйым.",
+pr3_h:"12 айға дейін бөліп төлеу", pr3_p:"Halyk Bank арқылы, онлайн немесе бутикте рәсімдеу.",
+pr4_h:"Қазақстан бойынша жеткізу", pr4_p:"300 000 ₸-ден бастап тапсырыстарға тегін, толық сақтандырумен.",
+cat_h:"Коллекциялар", cat_lead:"585 және 750 сынамалы алтыннан, платина мен күмістен жасалған 500-ге жуық бұйым. Іріктемені таңдаңыз немесе сүзгілерді баптаңыз.",
+filters:"Сүзгілер", f_metal:"Металл", f_insert:"Асыл тас", f_price:"Бағасы, ₸", from:"бастап", to:"дейін", f_stock:"Тек бутикте барлары", f_reset:"Сүзгілерді тазарту", f_show:"Көрсету: {n}",
+search_ph:"Атауы немесе артикулы", s_pop:"Алдымен танымалдары", s_new:"Алдымен жаңалары", s_asc:"Алдымен арзандары", s_desc:"Алдымен қымбаттары",
+more:"Тағы көрсету", found:"Табылды: {n}", nothing:"Бұл шарттар бойынша ештеңе табылмады. Сүзгілердің бір бөлігін алып тастаңыз немесе бізге жазыңыз — өзіміз іріктеп береміз.",
+sh_all:"Барлық бұйымдар", sh_new:"Жаңалықтар", sh_hit:"Хиттер", sh_gift:"300 000 ₸-ге дейінгі сыйлық", sh_wedding:"Неке сақиналары", sh_ny:"Жаңа жылға", sh_fav:"Таңдаулылар",
+c_all:"Барлық санаттар", c_ring:"Сақиналар", c_wedding:"Неке сақиналары", c_earrings:"Сырғалар", c_pendant:"Кулондар", c_bracelet:"Білезіктер", c_brooch:"Төсбелгілер", c_set:"Жиынтықтар", c_men:"Ерлерге",
+n_ring:"Сақина", n_wedding:"Неке сақинасы", n_earrings:"Сырға", n_pendant:"Кулон", n_bracelet:"Білезік", n_brooch:"Төсбелгі", n_set:"Жиынтық", n_men:"Жүзік",
+mt_y585:"Сары алтын 585", mt_r585:"Қызыл алтын 585", mt_w585:"Ақ алтын 585", mt_y750:"Сары алтын 750", mt_w750:"Ақ алтын 750", mt_pt:"Платина 950", mt_ag:"Күміс 925",
+in_diamond:"Бриллианттар", in_emerald:"Зүмірет", in_sapphire:"Сапфир", in_ruby:"Лағыл", in_pearl:"Інжу", in_none:"Тассыз",
+tag_new:"Жаңа", tag_hit:"Хит", sold:"Сатылды", unique:"Жалғыз дана",
+per_month:"бөліп төлеуге айына {x} ₸-ден",
+vin_h:"Тарихы бар винтаж", vin_lead:"Әр бұйымды бутик маманы бағалаған және ол бір данада ғана бар. Сатылған заттар мұрағатта қалады — жақсы нәрсе күтпейтінін еске салып тұрады.",
+vin_all:"Бүкіл винтаж коллекциясы", vin_less:"Жию",
+era_all:"Барлық дәуірлер", era_vict:"Виктория дәуірі", era_nouveau:"Ар-нуво", era_deco:"Ар-деко", era_retro:"Ретро, 1940-жылдар", era_mid:"Ғасыр ортасы", era_ussr:"Кеңестік классика",
+cond_1:"Өте жақсы", cond_2:"Жақсы", cond_3:"Қанағаттанарлық, уақыт іздері бар",
+sell_h:"Сату немесе комиссияға тапсыру", sell_p:"Сіздің асылыңыздың жаңа тарихы басталуы мүмкін. Сипаттамасын жіберіңіз — бутик бағалаушысы 1–2 жұмыс күні ішінде WhatsApp арқылы жауап береді.",
+sell_buy_h:"Бірден сату", sell_buy_p:"Ақша мәміле күні беріледі, сомасы нарықтық бағадан төмен.",
+sell_com_h:"Комиссияға тапсыру", sell_com_p:"Бутик комиссиясы 20–30 %, шарт 90 күнге, төлем сатылғаннан кейін.",
+sell_note:"Фото бойынша алдын ала бағалау ұсыныс болып саналмайды. Түпкілікті баға — бутикте қарағаннан кейін. Алтын, платина және күмістен жасалған бұйымдарды қабылдаймыз; тапсыру кезінде жеке куәлік қажет.",
+s_type:"Бұйым түрі", s_metal:"Металл және сынама", s_metal_ph:"Мысалы, алтын 583", s_story:"Жасы мен тарихы", s_story_ph:"Бұйым қайдан, шамамен қай жыл, чектер мен сертификаттар бар ма",
+name:"Аты", phone:"Телефон", city:"Қала", agree_pd:"Дербес деректерімді өңдеуге келісім беремін",
+s_send:"Бағалауға жіберу", s_photos:"Фотоларды (жалпы көрінісі, таңбалар, тастар жақыннан) WhatsApp-та келесі хабарламамен жібересіз.",
+pay_h:"Төлем және бөліп төлеу", pay_lead:"Жеткізілетін тапсырыстар алдын ала төленеді. Өзі алып кету кезінде бутикте төлеуге немесе бұйымды брондауға болады.",
+m1_h:"Банк картасы", m1_p:"Visa және Mastercard, Halyk Bank интернет-эквайрингі арқылы.",
+m2_h:"Halyk Bank бөліп төлеуі", m2_p:"2 айдан 12 айға дейін, банк үстемесімен. Шешім онлайн бірнеше минутта.",
+m3_p:"Kaspi Pay, Kaspi QR және Kaspi Бөліп төлеу.", soon:"жақында",
+m4_h:"Бутикте", m4_p:"Өзі алып кету кезінде қолма-қол, картамен немесе QR арқылы. Заңды тұлғалар мен ЖК үшін қолма-қолсыз есеп айырысу.",
+prepay_h:"Алдын ала төлем", pp_c:"Жағдай", pp_p:"Алдын ала қанша төлеу керек",
+pp1_c:"Бұйым бар, жеткізу", pp1_p:"100 % — бұйым құны; 300 000 ₸-ден бастап жеткізу тегін",
+pp2_c:"Бутиктен өзі алып кету", pp2_p:"Алдын ала төлемсіз; 1 000 000 ₸-ден бастап бұйымдарға — 10 % бронь",
+pp3_c:"Тапсырыспен, гравировка", pp3_p:"30–50 %, қалғаны жіберер алдында немесе бутикте",
+pp4_c:"Винтаж", pp4_p:"3 күнге 10–20 % бронь, қалғаны сатып алғанда",
+calc_h:"Бөліп төлеу калькуляторы", calc_sum:"Бұйым құны, ₸", calc_term:"Мерзімі", calc_month:"Айлық төлем", calc_total:"Барлығы", calc_over:"Артық төлем",
+calc_note:"Есеп алдын ала жасалған. Бөліп төлеуді Halyk Bank ұсынады, түпкілікті шарттар — банкпен жасалған шартта. Бөліп төлегендегі баға толық төлегендегі бағадан банк үстемесінің мөлшеріне жоғары.",
+months:"ай",
+del_h:"Қазақстан бойынша жеткізу", del_lead:"Павлодардан Қазақстанның кез келген қаласына жібереміз. Басқа елдерге жеткізу әзірге қолжетімсіз — бұйымдарды бутиктен өзіңіз сатып ала аласыз.",
+dr1:"Әр жөнелтілім толық құнына сақтандырылады.", dr2:"Алушының өзіне жеке куәлік бойынша табысталады.", dr3:"Фирмалық қорап логотипсіз қарапайым қаптамада.", dr4:"Бақылау нөмірі жіберілген күні WhatsApp-қа келеді.", dr5:"Төлемнен кейін 1 жұмыс күні ішінде жібереміз; гравировкасы бар бұйымдар — 5–14 күннен кейін.",
+dcalc_h:"Мерзімі мен құны", dsum:"Тапсырыс сомасы, ₸", dnote:"Курьерлік қызметтердің тарифтері шамамен берілген және тапсырысты растау кезінде нақтыланады.",
+d_pickup:"ЦУМ-дағы бутиктен өзі алып кету", d_pickup_t:"Тапсырыс күні", d_bcourier:"Бутик курьері, киіп көрумен", d_bcourier_t:"Тапсырыс күні немесе келесі күні, 2–3 сағаттық аралық", d_bcourier_aksu:"Келісім бойынша",
+d_service:"Жарияланған құнымен курьерлік қызмет", d_post:"Қазпошта, жарияланған құнымен EMS", free:"Тегін", dd:"{a}–{b} күн", d_ins:"сақтандыруды қоса",
+other_city:"Басқа елді мекен",
+raffle_h:"Ашылу күнгі ұтыс ойыны", raffle_lead:"11 желтоқсанға дейін тіркеліңіз, ал 12 желтоқсан сағат 18:00-де біз коллекциямыздағы әшекейді ойнатамыз. Қатысу тегін, сатып алу міндетті емес.",
+raffle_closed:"Тіркеу аяқталды. Ұтыс ойыны — 12 желтоқсан сағат 18:00-де бутикте және Instagram-дағы тікелей эфирде.", raffle_done:"Ұтыс ойыны өтті. Жеңімпаз WhatsApp арқылы хабарлама алды. Ашылуда бізбен бірге болғандардың бәріне рахмет!",
+prize_label:"Бас жүлде", prize_what:"Құны 200 000 ₸ ар-деко стиліндегі әшекей",
+step1:"Форманы толтырып, өтінімді WhatsApp арқылы жіберіңіз", step2:"Қатысушы нөмірін жауап хабарламасынан алыңыз", step3:"12 желтоқсанда бутикке келіңіз немесе Instagram-дағы тікелей эфирді көріңіз",
+c_age:"Маған 18 жас толды", c_agree:"Ұтыс ойынының ережелерін қабылдаймын және дербес деректерімді өңдеуге келісім беремін.", rules_link:"Ұтыс ойынының ережелері", r_submit:"Қатысу",
+where_h:"ЦУМ-дағы бутик", where_place:"ЦУМ, Павлодар", where_hours_l:"Күн сайын ЦУМ кестесі бойынша, 10:00–22:00", where_2gis:"2ГИС-те ашу",
+book_h:"Киіп көру және кеңес", book_p:"Уақытты таңдаңыз — келуіңізге каталогтан 5 бұйымға дейін дайындап қоямыз. Жазылмай-ақ келуге болады.",
+b_date:"Күні", b_time:"Уақыты", b_note:"Не көргіңіз келеді", b_note_ph:"Артикулдар немесе тілектер", b_send:"Жазылу",
+faq_h:"Жиі қойылатын сұрақтар", privacy:"Құпиялылық саясаты", offer:"Жария оферта",
+assistant:"Онлайн-көмекші", as_name:"«Моя прелесть» көмекшісі", as_ph:"Сұрағыңызды жазыңыз", as_on:"Сатушылар 22:00-ге дейін байланыста", as_off:"Сатушылар 10:00-ден бастап жауап береді",
+sp_art:"Артикул", sp_metal:"Металл", sp_weight:"Салмағы", sp_insert:"Асыл тас", sp_era:"Дәуір", sp_origin:"Шығу тегі", sp_cond:"Күйі", sp_exp:"Сараптама", sp_exp_v:"Бутик бағалаушысының қорытындысы", g:"г",
+choose_size:"Өлшемі", size_guide:"Өлшемді қалай білуге болады", in_stock:"Бутикте бар", to_order:"Тапсырыспен, 7–14 күн",
+to_cart:"Себетке", buy_inst:"Бөліп төлеуді есептеу", try_on:"Бутикте киіп көру", added_cart:"Себетке қосылды", added_fav:"Таңдаулыларға қосылды", removed_fav:"Таңдаулылардан алынды",
+del_to:"{c} қаласына жеткізу: {t}", reserve_v:"Брондау",
+size_text:"Саусақтың түбін жіппен орап, қиылысқан жерін белгілеңіз де, ұзындығын сызғышпен өлшеңіз. 3,14-ке бөліңіз — бұл миллиметрмен диаметр және сіздің өлшеміңіз. Мысалы, 17,5 мм — 17,5 өлшем. Саусақтар сәл кеңейетін кешке өлшеңіз.",
+cart_h:"Себет", fav_h:"Таңдаулылар", cart_empty:"Себет әзірге бос. Коллекцияларды немесе винтажды қараңыз.", fav_empty:"Бұйымды сақтау үшін карточкадағы жүрекшені басыңыз.", total:"Барлығы", checkout:"Тапсырыс беру", remove:"Жою", size_s:"өлшемі",
+co_h:"Тапсырысты рәсімдеу", co_contacts:"Байланыс", co_delivery:"Алу тәсілі", co_pay:"Төлем", co_addr:"Жеткізу мекенжайы", co_addr_ph:"Көше, үй, пәтер",
+pay_card:"Картамен онлайн", pay_card_p:"Бұйымның бар екені расталғаннан кейін Halyk төлем сілтемесі WhatsApp-қа келеді", pay_inst:"Halyk Bank бөліп төлеуі", pay_inst_p:"Тапсырыс расталғаннан кейін банкке өтінім",
+pay_kaspi:"Kaspi", pay_kaspi_p:"Жақында", pay_shop:"Алған кезде бутикте", pay_shop_p:"Тек өзі алып кету үшін",
+co_submit:"Тапсырысты растау", co_note:"Сатушы бұйымның бар-жоғын тексеріп, төлем сілтемесін жібереді. Жеткізілетін тапсырыстар алдын ала төленеді.",
+co_ok_h:"{n} тапсырысы жасалды", co_ok_p:"Жаңа терезеде ашылған WhatsApp хабарламасын жіберіңіз — сатушы бұйымның бар екенін растап, төлем сілтемесін жібереді. Жұмыс уақытынан тыс 10:00-ден бастап жауап береміз.", co_ok_srv:"Тапсырысыңызды алдық, WhatsApp арқылы хабарласамыз.", wa_again:"WhatsApp-ты қайта ашу",
+e_name:"Атыңызды жазыңыз", e_phone:"Нөмірді толық енгізіңіз: +7 және 10 сан", e_city:"Қаланы таңдаңыз", e_check:"Келісіміңізді растаңыз", e_check2:"Жасыңызды және ережелермен келісіміңізді растаңыз", e_size:"Өлшемді таңдаңыз", e_addr:"Жеткізу мекенжайын жазыңыз", e_date:"Бутик ашылғаннан ерте емес күнді таңдаңыз",
+r_ok_h:"Өтінім дайын", r_ok_p:"WhatsApp-та хабарлама жіберіңіз — жауап ретінде қатысушы нөміріңіз келеді. Сізді 12 желтоқсан сағат 18:00-де ЦУМ-дағы бутикте күтеміз.",
+s_ok_h:"Сипаттама дайын", s_ok_p:"WhatsApp-та хабарлама жіберіп, фотоларды тіркеңіз. Бағалаушы 1–2 жұмыс күні ішінде жауап береді.",
+b_ok_h:"Жазылу дайын дерлік", b_ok_p:"WhatsApp-та хабарлама жіберіңіз — сатушы уақытты растайды.",
+srv_ok:"Дайын! WhatsApp арқылы хабарласамыз.",
+rules_h:"Ұтыс ойынының ережелері",
+rules_list:["Ұйымдастырушы — «Моя прелесть» зергерлік бутигі, Павлодар.","Тіркеу 2027 жылғы 1 қарашадан 11 желтоқсан Павлодар уақытымен 23:59-ға дейін.","18 жастан асқан адамдар қатыса алады. Бір телефон нөмірі — бір тіркелу.","Қатысу тегін, сатып алу талап етілмейді.","Бас жүлде — бутик коллекциясындағы құны 200 000 ₸ әшекей.","Жеңімпазды 2027 жылғы 12 желтоқсан сағат 18:00-де бутикте кездейсоқ сандар генераторы анықтайды, Instagram-да тікелей эфир болады.","Жүлде 30 күн ішінде жеке куәлік бойынша бутикте беріледі."],
+rules_note:"Жоба. Жүлдеден салық төлеу тәртібін қоса алғанда, толық нұсқасы заңгер тексергеннен кейін жарияланады.",
+privacy_list:["Атыңызды, телефоныңызды, қалаңызды және жеткізу мекенжайын тек тапсырыстарды өңдеу, жазылу, бұйымдарды бағалау және ұтыс ойынына қатысу үшін жинаймыз.","Деректер Қазақстандағы серверлерде сақталады және банктен (төлем мен бөліп төлеу үшін) және жеткізу қызметінен басқа үшінші тұлғаларға берілмейді.","Келісімді WhatsApp арқылы жазып, кері қайтарып ала аласыз."],
+offer_list:["Сатушы — «Моя прелесть» зергерлік бутигі (деректемелері беттің төменгі жағында).","Бағалар теңгемен көрсетілген. Тапсырыс бұйымның бар екені тексеріліп, төленгеннен кейін расталады.","Бұйымдарға кепілдік — 12 ай. Қайтару және айырбастау — Қазақстан Республикасының тұтынушылардың құқықтарын қорғау туралы заңнамасы бойынша.","Бөліп төлеу мен несиені банк өз шарттарымен ұсынады."],
+docs_note:"Құжаттың жобасы. Сайтты іске қоспас бұрын заңгермен келісу қажет.",
+faq:[
+["Бұйымның түпнұсқа екенін қалай тексеруге болады?","Әр бұйымда мемлекеттік сынама таңбасы бар, әр сатып алуға нөмірлі сертификат беріледі. Винтажға — бағалаушының қорытындысы, ал қымбат бұйымдарға — геммологиялық зертхананың қорытындысы."],
+["Бөліп төлеуді қалай рәсімдеуге болады?","Тапсырыс беру кезінде «Halyk Bank бөліп төлеуі» тармағын таңдаңыз немесе бутикте сатушыға айтыңыз. Мерзімі — 2 айдан 12 айға дейін, банк үстеме қосады, түпкілікті соманы рәсімдегенге дейін калькулятордан көресіз."],
+["Басқа елге жеткізуге тапсырыс беруге бола ма?","Әзірге жоқ: тек Қазақстан бойынша жеткіземіз. Басқа елдерден келген қонақтар бұйымдарды ЦУМ-дағы бутиктен өздері сатып ала алады."],
+["Жеткізу қанша тұрады және қанша уақыт алады?","Павлодар бойынша — тапсырыс күні немесе келесі күні тегін. Қазақстан бойынша — ірі қалаларға 1–4 күн, шалғай елді мекендерге 3–10 күн. 300 000 ₸-ден бастап тегін."],
+["Әшекейді қайтаруға бола ма?","Ақауы бар бұйымды кепілдік бойынша ауыстырамыз немесе ақшасын қайтарамыз. Тиісті сападағы зергерлік бұйымдар заң бойынша, әдетте, айырбасталмайды және қайтарылмайды — сондықтан киіп көруге шақырамыз."],
+["Винтажды комиссияға қалай тапсыруға болады?","«Винтаж» бөліміндегі форманы толтырып, фотоларды WhatsApp-қа жіберіңіз. Бетпе-бет бағалаудан кейін 90 күнге шарт жасаймыз, бутик комиссиясы 20–30 %, ақша — сатылғаннан кейін."],
+["Гравировка жасайсыздар ма?","Иә, бұйымдардың көбіне. Мерзімі — 5–14 күн, мәтінді тапсырысқа түсініктемеде жазыңыз немесе сатушыға айтыңыз."]
+],
+as_hello:"Сәлеметсіз бе! Мен «Моя прелесть» бутигінің көмекшісімін. Әшекей таңдауға, бөліп төлеу мен жеткізуді есептеуге көмектесемін, винтаж бен ұтыс ойыны туралы айтып беремін.",
+q_pick:"Сыйлық таңдау", q_size:"Сақина өлшемі", q_inst:"Бөліп төлеу", q_del:"Жеткізу", q_vin:"Винтаж тапсыру", q_raffle:"Ұтыс ойыны", q_where:"Бутик қайда", q_human:"Сатушыны шақыру",
+as_pick_q:"Әшекей кімге арналғанын, не іздейтініңізді және бюджетті жазыңыз. Мысалы: «400 000-ға дейін сырға» немесе «зүмірет сақина».",
+as_found:"Ұсына алатыным:", as_none:"Дәл сәйкестік жоқ. Каталогтағы іріктемені қараңыз немесе сатушыны шақырыңыз — өзіміз таңдап береміз.",
+as_inst:"Halyk Bank бөліп төлеуі — 2 айдан 12 айға дейін, банк үстеме қосады. Мысалы, {p} ₸ тұратын бұйым 12 айға — айына шамамен {m} ₸, барлығы {t} ₸. Нақты шарттарды банк көрсетеді.",
+as_del:"Тек Қазақстан бойынша жеткіземіз: Павлодар бойынша — тапсырыс күні тегін, ірі қалаларға — 1–4 күн, шалғай жерлерге — 10 күнге дейін. 300 000 ₸-ден бастап тегін, бәрі сақтандырылған.",
+as_vin:"Винтажды бірден сатуға немесе комиссияға тапсыруға болады (20–30 %, шарт 90 күнге). Бағалау сомасын тек бутик бағалаушысы қарағаннан кейін айтады. Форманы толтырып, фотоларды WhatsApp-қа жіберіңіз.",
+as_raffle:"Ұтыс ойынына тіркелу — 2027 жылғы 11 желтоқсанға дейін, қатысу тегін. Ұтыс ойыны 12 желтоқсан сағат 18:00-де бутикте және Instagram эфирінде. Бас жүлде — 200 000 ₸ тұратын әшекей.",
+as_where:"Біз Павлодардағы ЦУМ-дамыз, ЦУМ кестесі бойынша 10:00-ден 22:00-ге дейін жұмыс істейміз. Ашылуы — 2027 жылғы 12 желтоқсан. Қабат пен бутик нөмірін ашылуға жақын хабарлаймыз.",
+as_pay:"Төлем: Halyk Bank арқылы картамен онлайн, Halyk бөліп төлеуі 12 айға дейін, бутикте — қолма-қол, картамен немесе QR арқылы. Kaspi-ді жақында қосамыз.",
+as_ret:"Ақауы бар бұйымды 12 айлық кепілдік бойынша ауыстырамыз немесе ақшасын қайтарамыз. Сапалы зергерлік бұйымдар, әдетте, айырбасталмайды және қайтарылмайды, сондықтан бутикте киіп көруге кеңес береміз.",
+as_human:"Диалогты сатушыға беремін. Батырманы басыңыз — бутиктің WhatsApp-ы ашылады.", as_human_btn:"WhatsApp-қа жазу",
+as_dunno:"Дұрыс түсінгеніме сенімді емеспін. Төменнен тақырыпты таңдаңыз немесе сатушыны шақырыңыз.",
+go_section:"Бөлімді ашу"
+}
+};
+</script>
+<script>
+(function(){
+"use strict";
+/* ---------- helpers ---------- */
+var $ = function(s, r){ return (r || document).querySelector(s); };
+var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+var lang = "ru";
+var store = {
+  get: function(k, d){ try { var v = localStorage.getItem("mp-" + k); return v ? JSON.parse(v) : d; } catch(e){ return d; } },
+  set: function(k, v){ try { localStorage.setItem("mp-" + k, JSON.stringify(v)); } catch(e){} }
+};
+lang = store.get("lang", "ru"); if (lang !== "kk") lang = "ru";
+function t(k, vars){
+  var s = I18N[lang][k]; if (s === undefined) s = I18N.ru[k]; if (s === undefined) return k;
+  if (vars && typeof s === "string") Object.keys(vars).forEach(function(v){ s = s.split("{" + v + "}").join(vars[v]); });
+  return s;
+}
+function money(n){ return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0"); }
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function num(v){ return parseInt(String(v).replace(/\D/g, ""), 10) || 0; }
+function toast(msg){ var el = $("#toast"); el.textContent = msg; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(function(){ el.hidden = true; }, 2200); }
+function pavHour(){ var d = new Date(Date.now() + 5 * 3600e3); return d.getUTCHours(); }
+
+/* extra labels for vintage metals */
+I18N.ru.mt_y583 = "Жёлтое золото 583"; I18N.kk.mt_y583 = "Сары алтын 583";
+I18N.ru.mt_r583 = "Красное золото 583"; I18N.kk.mt_r583 = "Қызыл алтын 583";
+I18N.ru.mt_ag875 = "Серебро 875"; I18N.kk.mt_ag875 = "Күміс 875";
+
+/* ---------- demo catalogue (replace with export from 1С) ---------- */
+function rng(seed){ return function(){ seed |= 0; seed = seed + 0x6D2B79F5 | 0; var x = Math.imul(seed ^ seed >>> 15, 1 | seed); x = x + Math.imul(x ^ x >>> 7, 61 | x) ^ x; return ((x ^ x >>> 14) >>> 0) / 4294967296; }; }
+var R = rng(20271212);
+function pick(a){ return a[Math.floor(R() * a.length)]; }
+function wpick(o){ var tot = 0, k; for (k in o) tot += o[k]; var r = R() * tot; for (k in o){ r -= o[k]; if (r <= 0) return k; } return k; }
+var CATS = ["ring","wedding","earrings","pendant","bracelet","brooch","set","men"];
+var METALS = ["y585","r585","w585","y750","w750","pt","ag"];
+var INSERTS = ["diamond","emerald","sapphire","ruby","pearl","none"];
+var MODELS = ["Веер","Арка","Октагон","Ступени","Луч","Аврора","Глория","Риваж","Сияние","Метрополис","Лотос","Корона","Мираж","Эдем","Сапфо","Стелла"];
+var MCOLOR = { y585:"#D9B44A", r585:"#C98B5B", w585:"#D8DCE0", y750:"#E0B53C", w750:"#E3E6E9", pt:"#C9CED2", ag:"#BFC5CB", y583:"#D2A84A", r583:"#C7845A", ag875:"#B8BEC4" };
+var SCOLOR = { diamond:"#EEF6FB", emerald:"#0F8A62", sapphire:"#1F44A0", ruby:"#A3132B", pearl:"#F4EEE2" };
+var MMUL = { y585:1, r585:1, w585:1.08, y750:1.45, w750:1.55, pt:2.1, ag:.18 };
+var CBASE = { ring:240000, wedding:190000, earrings:300000, pendant:210000, bracelet:380000, brooch:260000, set:620000, men:330000 };
+var IADD = { diamond:260000, emerald:190000, sapphire:170000, ruby:180000, pearl:70000, none:0 };
+var PRODUCTS = [], VINTAGE = [];
+(function gen(){
+  for (var i = 0; i < 450; i++){
+    var cat = wpick({ring:90,wedding:45,earrings:95,pendant:70,bracelet:50,brooch:20,set:30,men:50});
+    var metal = cat === "wedding" ? wpick({y585:3,r585:3,w585:3,y750:1,pt:1}) : wpick({y585:24,r585:14,w585:18,y750:10,w750:8,pt:4,ag:22});
+    var ins = cat === "wedding" ? wpick({none:6,diamond:3}) : cat === "men" ? wpick({none:5,diamond:2,sapphire:1,ruby:1}) : wpick({diamond:30,emerald:14,sapphire:12,ruby:10,pearl:12,none:22});
+    var price = (CBASE[cat] + IADD[ins] * (metal === "ag" ? .25 : 1)) * MMUL[metal] * (0.75 + R() * 0.7);
+    if (metal === "ag") price = Math.max(price, 45000);
+    price = Math.round(price / 1000) * 1000;
+    var sized = cat === "ring" || cat === "wedding" || cat === "men" || cat === "bracelet";
+    var sizes = null;
+    if (sized){
+      var list = cat === "bracelet" ? ["16","17","18","19"] : cat === "men" ? ["19","20","21","22","23"] : ["15,5","16","16,5","17","17,5","18","18,5","19"];
+      sizes = list.map(function(s){ return { s:s, n: R() < .72 ? 1 + Math.floor(R() * 3) : 0 }; });
+    }
+    var stock = R() < .86;
+    var weight = Math.round(((cat === "set" || cat === "bracelet") ? 6 + R() * 10 : 1.8 + R() * 5) * 100) / 100;
+    PRODUCTS.push({
+      id: "MP-" + (1001 + i), cat: cat, metal: metal, ins: ins, model: pick(MODELS), price: price,
+      sizes: sizes, stock: stock, weight: weight, pop: Math.round(R() * 1000),
+      isNew: i % 7 === 0, hit: R() < .08, ny: (cat === "earrings" || cat === "pendant" || cat === "bracelet" || cat === "set") && price <= 650000 && R() < .55,
+      v: Math.floor(R() * 3), carat: ins === "diamond" ? (Math.round((0.05 + R() * .9) * 100) / 100) : 0
+    });
+  }
+  var ERAS = {vict:4, nouveau:5, deco:12, retro:8, mid:9, ussr:12};
+  var VNAMES = ["Эдит","Маргарита","Одетта","Вивьен","Ариадна","Лидия","Нинель","Клара","Ирэн","Зоя"];
+  var ORIG = {
+    vict:{ru:"Великобритания, около 1885 г.", kk:"Ұлыбритания, шамамен 1885 ж."},
+    nouveau:{ru:"Франция, около 1905 г.", kk:"Франция, шамамен 1905 ж."},
+    deco:{ru:"Франция или Австрия, 1925–1935 гг.", kk:"Франция немесе Австрия, 1925–1935 жж."},
+    retro:{ru:"США, 1940-е годы", kk:"АҚШ, 1940-жылдар"},
+    mid:{ru:"Европа, 1955–1965 гг.", kk:"Еуропа, 1955–1965 жж."},
+    ussr:{ru:"СССР, 1960–1980-е годы, клеймо со звездой", kk:"КСРО, 1960–1980-жылдар, жұлдызды таңба"}
+  };
+  var STORY = {
+    ru:["Изделие хранилось в одной семье три поколения и сохранило оригинальную закрепку камней.","Куплено у частного коллекционера; сохранились родные клейма мастерской и проба.","Типичный пример стиля эпохи: геометрия, контраст металла и камня, ручная гравировка.","Принято на комиссию от владельца, который получил украшение в подарок на свадьбу."],
+    kk:["Бұйым бір отбасында үш ұрпақ бойы сақталып, тастардың түпнұсқа бекітпесін сақтап қалған.","Жеке коллекционерден сатып алынған; шеберхананың төл таңбалары мен сынамасы сақталған.","Дәуір стилінің типтік үлгісі: геометрия, металл мен тастың үйлесімі, қолмен жасалған гравировка.","Әшекейді үйлену тойына сыйлыққа алған иесінен комиссияға қабылданған."]
+  };
+  for (var j = 0; j < 50; j++){
+    var era = wpick(ERAS);
+    var vc = wpick({ring:16,earrings:10,pendant:8,brooch:9,bracelet:5,set:2});
+    var vm = era === "ussr" ? wpick({y583:5,r583:5,ag875:2}) : wpick({y750:4,w750:2,pt:era === "deco" ? 3 : 1,y585:2});
+    var vi = era === "ussr" ? wpick({ruby:3,none:3,diamond:1,sapphire:1}) : wpick({diamond:5,emerald:2,sapphire:2,ruby:1,pearl:2,none:1});
+    var vp = (CBASE[vc] + IADD[vi]) * (MMUL[vm] || (vm === "ag875" ? .2 : 1.05)) * (era === "vict" || era === "deco" ? 1.6 : 1.1) * (0.8 + R() * .7);
+    var sIdx = Math.floor(R() * STORY.ru.length);
+    VINTAGE.push({
+      id: "MPV-" + (201 + j), vintage: true, cat: vc, metal: vm, ins: vi, model: pick(VNAMES), era: era,
+      price: Math.round(vp / 1000) * 1000, sizes: vc === "ring" ? [{ s: pick(["16","16,5","17","17,5","18"]), n:1 }] : null,
+      stock: true, weight: Math.round((1.8 + R() * 6) * 100) / 100, cond: 1 + Math.floor(R() * 3), sold: j % 6 === 5,
+      origin: ORIG[era], story: { ru: STORY.ru[sIdx], kk: STORY.kk[sIdx] }, pop: Math.round(R() * 1000), v: Math.floor(R() * 3), carat: 0
+    });
+  }
+})();
+var ALL = PRODUCTS.concat(VINTAGE);
+function byId(id){ for (var i = 0; i < ALL.length; i++) if (ALL[i].id === id) return ALL[i]; return null; }
+function pname(p){ return t("n_" + p.cat) + " «" + p.model + "»"; }
+
+/* ---------- jewellery drawings (placeholder until photos) ---------- */
+function art(p, size){
+  var m = MCOLOR[p.metal] || "#D9B44A", st = SCOLOR[p.ins], id = "g" + p.id.replace(/\W/g, "") + (size || "");
+  var d = '<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="' + id + '" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".35" stop-color="' + m + '"/><stop offset="1" stop-color="' + m + '" stop-opacity=".75"/></linearGradient></defs>';
+  var M = 'url(#' + id + ')';
+  function gem(x, y, r, shape){
+    if (!st) return "";
+    if (p.ins === "pearl") return '<circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="' + st + '" stroke="#CFC4AE" stroke-width="1"/><circle cx="' + (x - r / 3) + '" cy="' + (y - r / 3) + '" r="' + r / 4 + '" fill="#fff" opacity=".8"/>';
+    var pts = [], n = shape === 1 ? 6 : 8;
+    for (var k = 0; k < n; k++){ var a = Math.PI * 2 * k / n + Math.PI / n; pts.push((x + r * Math.cos(a)).toFixed(1) + "," + (y + r * Math.sin(a)).toFixed(1)); }
+    return '<polygon points="' + pts.join(" ") + '" fill="' + st + '" stroke="' + m + '" stroke-width="2"/><polygon points="' + pts.map(function(q){ var c = q.split(","); return ((+c[0] + x) / 2).toFixed(1) + "," + ((+c[1] + y) / 2).toFixed(1); }).join(" ") + '" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1"/>';
+  }
+  switch (p.cat){
+    case "ring": case "wedding":
+      d += '<ellipse cx="100" cy="122" rx="56" ry="50" fill="none" stroke="' + M + '" stroke-width="' + (p.cat === "wedding" ? 15 : 10) + '"/>';
+      d += '<ellipse cx="100" cy="122" rx="56" ry="50" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5" transform="translate(-3,-3)"/>';
+      if (p.cat === "wedding" && p.ins === "diamond") for (var w = -2; w <= 2; w++) d += '<circle cx="' + (100 + w * 13) + '" cy="72" r="3.6" fill="#EEF6FB" stroke="' + m + '"/>';
+      if (p.cat === "ring"){ if (p.v === 2) d += '<path d="M70 70 L100 40 L130 70" fill="none" stroke="' + M + '" stroke-width="4"/>'; d += '<rect x="86" y="58" width="28" height="16" fill="' + M + '"/>' + gem(100, 50, p.v === 1 ? 16 : 19, p.v); }
+      break;
+    case "men":
+      d += '<ellipse cx="100" cy="126" rx="52" ry="46" fill="none" stroke="' + M + '" stroke-width="14"/>';
+      d += '<polygon points="76,52 124,52 136,64 136,86 124,98 76,98 64,86 64,64" fill="' + M + '" stroke="#8a6d2c" stroke-opacity=".4"/>';
+      d += st ? gem(100, 75, 13, 0) : '<path d="M84 75 H116 M100 60 V90" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>';
+      break;
+    case "earrings":
+      [62, 138].forEach(function(x){
+        d += '<path d="M' + x + ' 30 q14 0 14 14" fill="none" stroke="' + M + '" stroke-width="3"/>';
+        if (p.v === 0) d += '<path d="M' + (x + 14) + ' 44 L' + (x - 6) + ' 90 L' + (x + 14) + ' 150 L' + (x + 34) + ' 90 Z" fill="none" stroke="' + M + '" stroke-width="4"/>' + gem(x + 14, 112, 13, 1);
+        else if (p.v === 1) d += '<circle cx="' + (x + 14) + '" cy="96" r="38" fill="none" stroke="' + M + '" stroke-width="6"/>' + gem(x + 14, 134, 9, 0);
+        else { d += '<path d="M' + (x + 14) + ' 50 L' + (x - 14) + ' 120 A30 30 0 0 0 ' + (x + 42) + ' 120 Z" fill="' + M + '" opacity=".9"/>'; for (var r2 = 0; r2 < 5; r2++) d += '<line x1="' + (x + 14) + '" y1="50" x2="' + (x - 12 + r2 * 13) + '" y2="128" stroke="#fff" stroke-opacity=".45"/>'; d += gem(x + 14, 64, 7, 0); }
+      });
+      break;
+    case "pendant":
+      d += '<path d="M30 10 L100 70 L170 10" fill="none" stroke="' + M + '" stroke-width="2" stroke-dasharray="3 3"/><circle cx="100" cy="74" r="6" fill="none" stroke="' + M + '" stroke-width="3"/>';
+      if (p.v === 0) d += '<polygon points="80,84 120,84 140,104 140,144 120,164 80,164 60,144 60,104" fill="none" stroke="' + M + '" stroke-width="6"/>' + gem(100, 124, 22, 0);
+      else if (p.v === 1) d += '<path d="M100 82 L62 132 Q100 196 138 132 Z" fill="none" stroke="' + M + '" stroke-width="6"/>' + gem(100, 138, 18, 1);
+      else d += '<path d="M100 82 L100 170 M70 110 L130 110 M78 140 L122 140" stroke="' + M + '" stroke-width="5"/>' + gem(100, 170, 12, 0);
+      break;
+    case "bracelet":
+      d += '<ellipse cx="100" cy="105" rx="78" ry="46" fill="none" stroke="' + M + '" stroke-width="' + (p.v === 1 ? 16 : 9) + '"' + (p.v === 0 ? ' stroke-dasharray="14 4"' : '') + '/>';
+      if (st) for (var b = 0; b < 7; b++){ var a2 = Math.PI * (0.15 + b * 0.117); d += gem(100 + 78 * Math.cos(a2), 105 + 46 * Math.sin(a2), 6, 0); }
+      break;
+    case "brooch":
+      for (var q = 0; q < 9; q++){ var a3 = Math.PI + Math.PI * (q + .5) / 9; d += '<line x1="100" y1="140" x2="' + (100 + 80 * Math.cos(a3)).toFixed(1) + '" y2="' + (140 + 80 * Math.sin(a3)).toFixed(1) + '" stroke="' + M + '" stroke-width="5"/>'; }
+      d += '<path d="M20 140 A80 80 0 0 1 180 140 Z" fill="none" stroke="' + M + '" stroke-width="4"/>' + gem(100, 130, 18, 0);
+      break;
+    case "set":
+      d += '<ellipse cx="70" cy="132" rx="38" ry="34" fill="none" stroke="' + M + '" stroke-width="8"/>' + gem(70, 92, 13, 0);
+      d += '<path d="M146 34 q10 0 10 10" fill="none" stroke="' + M + '" stroke-width="3"/><path d="M156 44 L136 92 L156 150 L176 92 Z" fill="none" stroke="' + M + '" stroke-width="4"/>' + gem(156, 112, 11, 1);
+      break;
+  }
+  return d + "</svg>";
+}
+
+/* ---------- favourites & cart ---------- */
+var favs = store.get("fav", []), cart = store.get("cart", []);
+function saveFav(){ store.set("fav", favs); var c = $("#favCount"); c.textContent = favs.length; c.hidden = !favs.length; }
+function saveCart(){ store.set("cart", cart); var c = $("#cartCount"); c.textContent = cart.length; c.hidden = !cart.length; }
+function toggleFav(id){ var i = favs.indexOf(id); if (i > -1){ favs.splice(i, 1); toast(t("removed_fav")); } else { favs.push(id); toast(t("added_fav")); } saveFav(); $$('.fav[data-id="' + id + '"]').forEach(function(b){ b.setAttribute("aria-pressed", favs.indexOf(id) > -1); }); if (cstate.show === "fav") renderGrid(true); }
+function addCart(id, size){ for (var i = 0; i < cart.length; i++) if (cart[i].id === id && cart[i].size === size){ toast(t("added_cart")); return; } cart.push({ id:id, size:size || null }); saveCart(); toast(t("added_cart")); }
+function cartTotal(){ return cart.reduce(function(s, c){ var p = byId(c.id); return s + (p ? p.price : 0); }, 0); }
+
+/* ---------- cards ---------- */
+function minMonthly(price){ var keys = Object.keys(CONFIG.halykMarkup).map(Number), max = Math.max.apply(null, keys); return price * (1 + CONFIG.halykMarkup[max] / 100) / max; }
+function card(p){
+  var tag = p.sold ? '<span class="tag sold">' + t("sold") + '</span>' : p.isNew ? '<span class="tag">' + t("tag_new") + '</span>' : p.hit ? '<span class="tag hit">' + t("tag_hit") + '</span>' : "";
+  var meta = p.vintage ? '<span class="era">' + t("era_" + p.era) + '</span>' : '<span class="meta">' + t("mt_" + p.metal) + (p.ins !== "none" ? ", " + t("in_" + p.ins).toLowerCase() : "") + '</span>';
+  return '<article class="card" data-id="' + p.id + '" tabindex="0" role="button" aria-label="' + esc(pname(p)) + '">' + tag +
+    '<button class="fav" type="button" data-id="' + p.id + '" aria-pressed="' + (favs.indexOf(p.id) > -1) + '" aria-label="' + t("favorites") + '"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>' +
+    '<div class="pic">' + art(p) + '</div><div class="body"><h3>' + esc(pname(p)) + '</h3>' + meta +
+    (p.sold ? "" : '<span class="inst">' + t("per_month", { x: money(minMonthly(p.price)) }) + '</span>') +
+    '<div class="row"><span class="price">' + money(p.price) + ' ₸</span><span class="meta">' + p.id + '</span></div></div></article>';
+}
+function bindCards(root){
+  root.addEventListener("click", function(e){
+    var f = e.target.closest(".fav"); if (f){ e.stopPropagation(); toggleFav(f.dataset.id); return; }
+    var c = e.target.closest(".card"); if (c) openProduct(c.dataset.id);
+  });
+  root.addEventListener("keydown", function(e){ if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("card")){ e.preventDefault(); openProduct(e.target.dataset.id); } });
+}
+
+/* ---------- catalogue ---------- */
+var cstate = { show:"all", cat:"all", metals:[], ins:[], pmin:0, pmax:0, stock:false, q:"", sort:"pop", limit:24 };
+var SHOWS = ["all","new","hit","gift","wedding","ny","fav"];
+function readHash(){
+  var h = location.hash; if (h.indexOf("#catalog?") !== 0) return;
+  h.slice(9).split("&").forEach(function(kv){ var a = kv.split("="), k = a[0], v = decodeURIComponent(a[1] || "");
+    if (k === "show" && SHOWS.indexOf(v) > -1) cstate.show = v; if (k === "cat" && (v === "all" || CATS.indexOf(v) > -1)) cstate.cat = v;
+    if (k === "m") cstate.metals = v.split(",").filter(function(x){ return METALS.indexOf(x) > -1; });
+    if (k === "i") cstate.ins = v.split(",").filter(function(x){ return INSERTS.indexOf(x) > -1; });
+    if (k === "min") cstate.pmin = num(v); if (k === "max") cstate.pmax = num(v); if (k === "stock") cstate.stock = v === "1"; if (k === "q") cstate.q = v; if (k === "sort") cstate.sort = v; });
+}
+function writeHash(){
+  var p = [];
+  if (cstate.show !== "all") p.push("show=" + cstate.show); if (cstate.cat !== "all") p.push("cat=" + cstate.cat);
+  if (cstate.metals.length) p.push("m=" + cstate.metals.join(",")); if (cstate.ins.length) p.push("i=" + cstate.ins.join(","));
+  if (cstate.pmin) p.push("min=" + cstate.pmin); if (cstate.pmax) p.push("max=" + cstate.pmax); if (cstate.stock) p.push("stock=1");
+  if (cstate.q) p.push("q=" + encodeURIComponent(cstate.q)); if (cstate.sort !== "pop") p.push("sort=" + cstate.sort);
+  try { history.replaceState(null, "", p.length ? "#catalog?" + p.join("&") : location.pathname + location.search); } catch(e){}
+}
+function filtered(){
+  var q = cstate.q.trim().toLowerCase();
+  var list = PRODUCTS.filter(function(p){
+    if (cstate.show === "new" && !p.isNew) return false; if (cstate.show === "hit" && !p.hit) return false;
+    if (cstate.show === "gift" && p.price > 300000) return false; if (cstate.show === "wedding" && p.cat !== "wedding") return false;
+    if (cstate.show === "ny" && !p.ny) return false; if (cstate.show === "fav" && favs.indexOf(p.id) < 0) return false;
+    if (cstate.cat !== "all" && p.cat !== cstate.cat) return false;
+    if (cstate.metals.length && cstate.metals.indexOf(p.metal) < 0) return false;
+    if (cstate.ins.length && cstate.ins.indexOf(p.ins) < 0) return false;
+    if (cstate.pmin && p.price < cstate.pmin) return false; if (cstate.pmax && p.price > cstate.pmax) return false;
+    if (cstate.stock && !p.stock) return false;
+    if (q && (pname(p) + " " + p.id + " " + t("mt_" + p.metal) + " " + t("in_" + p.ins)).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+  if (cstate.show === "fav") list = list.concat(VINTAGE.filter(function(v){ return favs.indexOf(v.id) > -1; }));
+  var s = cstate.sort;
+  list.sort(function(a, b){ return s === "asc" ? a.price - b.price : s === "desc" ? b.price - a.price : s === "new" ? (b.isNew - a.isNew) || (b.id > a.id ? 1 : -1) : b.pop - a.pop; });
+  return list;
+}
+function renderChips(){
+  $("#shows").innerHTML = SHOWS.map(function(s){ return '<button class="chip" type="button" data-show="' + s + '" aria-pressed="' + (cstate.show === s) + '">' + t("sh_" + s) + '</button>'; }).join("");
+  $("#cats").innerHTML = ["all"].concat(CATS).map(function(c){ return '<button class="chip" type="button" data-cat="' + c + '" aria-pressed="' + (cstate.cat === c) + '">' + t("c_" + c) + '</button>'; }).join("");
+  $("#fMetal").innerHTML = METALS.map(function(m){ return '<label><input type="checkbox" value="' + m + '"' + (cstate.metals.indexOf(m) > -1 ? " checked" : "") + '> ' + t("mt_" + m) + '</label>'; }).join("");
+  $("#fInsert").innerHTML = INSERTS.map(function(m){ return '<label><input type="checkbox" value="' + m + '"' + (cstate.ins.indexOf(m) > -1 ? " checked" : "") + '> ' + t("in_" + m) + '</label>'; }).join("");
+  $("#pMin").value = cstate.pmin ? money(cstate.pmin) : ""; $("#pMax").value = cstate.pmax ? money(cstate.pmax) : "";
+  $("#fStock").checked = cstate.stock; $("#q").value = cstate.q; $("#sort").value = cstate.sort;
+}
+function renderGrid(reset){
+  if (reset) cstate.limit = 24;
+  var list = filtered();
+  $("#found").textContent = t("found", { n: list.length });
+  $("#fApply").textContent = t("f_show", { n: list.length });
+  $("#grid").innerHTML = list.length ? list.slice(0, cstate.limit).map(card).join("") : '<div class="empty" style="grid-column:1/-1">' + t("nothing") + '</div>';
+  $("#moreBtn").hidden = list.length <= cstate.limit;
+  writeHash();
+}
+function initCatalog(){
+  readHash(); renderChips(); renderGrid();
+  $("#shows").addEventListener("click", function(e){ var b = e.target.closest("[data-show]"); if (!b) return; cstate.show = b.dataset.show; renderChips(); renderGrid(true); });
+  $("#cats").addEventListener("click", function(e){ var b = e.target.closest("[data-cat]"); if (!b) return; cstate.cat = b.dataset.cat; renderChips(); renderGrid(true); });
+  $("#fMetal").addEventListener("change", function(){ cstate.metals = $$("#fMetal input:checked").map(function(i){ return i.value; }); renderGrid(true); });
+  $("#fInsert").addEventListener("change", function(){ cstate.ins = $$("#fInsert input:checked").map(function(i){ return i.value; }); renderGrid(true); });
+  ["#pMin","#pMax"].forEach(function(s){ $(s).addEventListener("change", function(){ cstate.pmin = num($("#pMin").value); cstate.pmax = num($("#pMax").value); $(s).value = num($(s).value) ? money(num($(s).value)) : ""; renderGrid(true); }); });
+  $("#fStock").addEventListener("change", function(e){ cstate.stock = e.target.checked; renderGrid(true); });
+  var qt; $("#q").addEventListener("input", function(e){ clearTimeout(qt); qt = setTimeout(function(){ cstate.q = e.target.value; renderGrid(true); }, 200); });
+  $("#sort").addEventListener("change", function(e){ cstate.sort = e.target.value; renderGrid(true); });
+  $("#moreBtn").addEventListener("click", function(){ cstate.limit += 24; renderGrid(); });
+  $("#fReset").addEventListener("click", function(){ cstate = { show:"all", cat:"all", metals:[], ins:[], pmin:0, pmax:0, stock:false, q:"", sort:"pop", limit:24 }; renderChips(); renderGrid(true); });
+  $("#fOpen").addEventListener("click", function(){ $("#filters").classList.add("open"); showScrim(true, closeFilters); });
+  $("#fClose").addEventListener("click", closeFilters); $("#fApply").addEventListener("click", closeFilters);
+  bindCards($("#grid"));
+}
+function closeFilters(){ $("#filters").classList.remove("open"); showScrim(false); }
+
+/* ---------- vintage ---------- */
+var vstate = { era:"all", all:false };
+var ERAS = ["all","vict","nouveau","deco","retro","mid","ussr"];
+function renderVintage(){
+  $("#eras").innerHTML = ERAS.map(function(e){ return '<button class="chip" type="button" data-era="' + e + '" aria-pressed="' + (vstate.era === e) + '">' + t("era_" + e) + '</button>'; }).join("");
+  var list = VINTAGE.filter(function(v){ return vstate.era === "all" || v.era === vstate.era; }).sort(function(a, b){ return (a.sold - b.sold) || (b.pop - a.pop); });
+  $("#vgrid").innerHTML = (vstate.all ? list : list.slice(0, 10)).map(card).join("");
+  $("#vMore").hidden = list.length <= 10; $("#vMore").textContent = t(vstate.all ? "vin_less" : "vin_all");
+}
+function initVintage(){
+  renderVintage();
+  $("#eras").addEventListener("click", function(e){ var b = e.target.closest("[data-era]"); if (!b) return; vstate.era = b.dataset.era; renderVintage(); });
+  $("#vMore").addEventListener("click", function(){ vstate.all = !vstate.all; renderVintage(); if (!vstate.all) $("#vintage").scrollIntoView(); });
+  bindCards($("#vgrid"));
+  $("#sType").innerHTML = ["ring","earrings","pendant","bracelet","brooch","set","men"].map(function(c){ return '<option value="' + c + '">' + t("c_" + c) + '</option>'; }).join("");
+}
+
+/* ---------- overlays ---------- */
+var scrimCb = null, lastFocus = null;
+function showScrim(on, cb){ $("#scrim").hidden = !on; scrimCb = on ? cb : null; document.body.classList.toggle("lock", on); }
+$("#scrim").addEventListener("click", function(){ if (scrimCb) scrimCb(); });
+function openModal(html, wide){
+  lastFocus = document.activeElement;
+  $("#mBody").innerHTML = html; var m = $("#modal"); m.style.width = wide === false ? "min(620px,calc(100% - 24px))" : ""; m.hidden = false; m.scrollTop = 0;
+  showScrim(true, closeModal); $("#mClose").focus();
+}
+function closeModal(){ $("#modal").hidden = true; showScrim(false); if (lastFocus && lastFocus.focus) lastFocus.focus(); }
+$("#mClose").addEventListener("click", closeModal);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape"){ if (!$("#modal").hidden) closeModal(); else if (!$("#drawer").hidden) closeDrawer(); else if ($("#filters").classList.contains("open")) closeFilters(); else if (!$("#chat").hidden) toggleChat(false); } });
+
+/* ---------- delivery logic ---------- */
+var CITIES = [
+  ["pav","Павлодар","Павлодар"],["aksu","Аксу","Ақсу"],["eki","Экибастуз","Екібастұз"],["ast","Астана","Астана"],["kar","Караганда","Қарағанды"],
+  ["ala","Алматы","Алматы"],["shy","Шымкент","Шымкент"],["akt","Актобе","Ақтөбе"],["atr","Атырау","Атырау"],["aktau","Актау","Ақтау"],["kos","Костанай","Қостанай"],
+  ["pet","Петропавловск","Петропавл"],["ukg","Усть-Каменогорск","Өскемен"],["sem","Семей","Семей"],["kok","Кокшетау","Көкшетау"],["ura","Уральск","Орал"],
+  ["tar","Тараз","Тараз"],["kzo","Кызылорда","Қызылорда"],["tal","Талдыкорган","Талдықорған"],["tur","Туркестан","Түркістан"],["zhe","Жезказган","Жезқазған"],["other",null,null]
+];
+function cityName(k){ for (var i = 0; i < CITIES.length; i++) if (CITIES[i][0] === k) return CITIES[i][1] ? CITIES[i][lang === "kk" ? 2 : 1] : t("other_city"); return ""; }
+function cityOptions(sel, withEmpty){ return (withEmpty ? '<option value="">' + t("e_city") + '</option>' : "") + CITIES.map(function(c){ return '<option value="' + c[0] + '"' + (c[0] === sel ? " selected" : "") + '>' + (c[1] ? c[lang === "kk" ? 2 : 1] : t("other_city")) + '</option>'; }).join(""); }
+function deliveryOptions(city, sum){
+  var free = sum >= CONFIG.freeShipFrom, ins = Math.round(sum * CONFIG.insurance / 100) * 100;
+  function cost(tariff){ return free ? 0 : tariff + ins; }
+  var o = [];
+  if (city === "pav"){ o.push({ k:"pickup", n:t("d_pickup"), time:t("d_pickup_t"), c:0 }); o.push({ k:"bcourier", n:t("d_bcourier"), time:t("d_bcourier_t"), c:0 }); }
+  else if (city === "aksu"){ o.push({ k:"bcourier", n:t("d_bcourier"), time:t("d_bcourier_aksu"), c:0 }); o.push({ k:"service", n:t("d_service"), time:t("dd", { a:1, b:2 }), c:cost(2500) }); }
+  else if (["eki","ast","kar"].indexOf(city) > -1) o.push({ k:"service", n:t("d_service"), time:t("dd", { a:1, b:2 }), c:cost(3500) });
+  else if (city === "other") o.push({ k:"post", n:t("d_post"), time:t("dd", { a:3, b:10 }), c:cost(5500) });
+  else { o.push({ k:"service", n:t("d_service"), time:t("dd", { a:2, b:4 }), c:cost(4500) }); o.push({ k:"post", n:t("d_post"), time:t("dd", { a:3, b:7 }), c:cost(4000) }); }
+  if (city !== "pav") o.push({ k:"pickup", n:t("d_pickup"), time:"ЦУМ, Павлодар", c:0 });
+  return o;
+}
+var userCity = store.get("city", "pav");
+function renderDelivery(){
+  $("#dCity").innerHTML = cityOptions(userCity);
+  var sum = num($("#dSum").value);
+  $("#dRes").innerHTML = deliveryOptions(userCity, sum).map(function(o){ return '<div class="dopt"><b>' + o.n + '</b><span class="c">' + (o.c ? money(o.c) + " ₸" : t("free")) + '</span><span>' + o.time + '</span>' + (o.c ? '<span style="text-align:right">' + t("d_ins") + '</span>' : "") + '</div>'; }).join("");
+}
+function initDelivery(){
+  renderDelivery();
+  $("#dCity").addEventListener("change", function(e){ userCity = e.target.value; store.set("city", userCity); renderDelivery(); });
+  $("#dSum").addEventListener("input", function(e){ var n = num(e.target.value); e.target.value = n ? money(n) : ""; renderDelivery(); });
+}
+
+/* ---------- installment calculator ---------- */
+var term = 12;
+function renderCalc(){
+  var terms = Object.keys(CONFIG.halykMarkup).map(Number).sort(function(a, b){ return a - b; });
+  if (terms.indexOf(term) < 0) term = terms[terms.length - 1];
+  $("#terms").innerHTML = terms.map(function(n){ return '<button class="chip" type="button" data-term="' + n + '" aria-pressed="' + (n === term) + '">' + n + " " + t("months") + '</button>'; }).join("");
+  var sum = num($("#cSum").value), total = sum * (1 + CONFIG.halykMarkup[term] / 100);
+  $("#cMonth").textContent = money(total / term) + " ₸"; $("#cTotal").textContent = money(total) + " ₸"; $("#cOver").textContent = money(total - sum) + " ₸";
+}
+function initCalc(){
+  renderCalc();
+  $("#terms").addEventListener("click", function(e){ var b = e.target.closest("[data-term]"); if (!b) return; term = +b.dataset.term; renderCalc(); });
+  $("#cSum").addEventListener("input", function(e){ var n = num(e.target.value); e.target.value = n ? money(n) : ""; renderCalc(); });
+}
+function goCalc(price){ closeModal(); $("#cSum").value = money(price); renderCalc(); $("#calc").scrollIntoView({ block:"center" }); }
+
+/* ---------- product modal ---------- */
+var selSize = null;
+function openProduct(id){
+  var p = byId(id); if (!p) return; selSize = null;
+  var spec = [[t("sp_art"), p.id], [t("sp_metal"), t("mt_" + p.metal)], [t("sp_weight"), String(p.weight).replace(".", ",") + " " + t("g")]];
+  if (p.ins !== "none") spec.push([t("sp_insert"), t("in_" + p.ins) + (p.carat ? ", " + String(p.carat).replace(".", ",") + " ct" : "")]);
+  if (p.vintage){ spec.push([t("sp_era"), t("era_" + p.era)], [t("sp_origin"), p.origin[lang]], [t("sp_cond"), t("cond_" + p.cond)], [t("sp_exp"), t("sp_exp_v")]); }
+  var sizes = p.sizes ? '<div class="lbl" style="margin-top:6px">' + t("choose_size") + ' · <button type="button" class="linkbtn" id="sizeHelp">' + t("size_guide") + '</button></div><div class="sizes" id="pSizes">' +
+    p.sizes.map(function(s){ return '<button type="button" data-s="' + s.s + '" aria-pressed="false"' + (s.n || !p.stock ? "" : " disabled") + '>' + s.s + '</button>'; }).join("") + '</div><p class="note" id="sizeTip" hidden>' + t("size_text") + '</p><div class="ferr" id="sizeErr"></div>' : "";
+  var dopt = deliveryOptions(userCity, p.price).filter(function(o){ return o.k !== "pickup" || userCity === "pav"; })[0];
+  var total12 = p.price * (1 + CONFIG.halykMarkup[12] / 100);
+  var html = '<div class="pm"><div class="pic">' + art(p, "m") + '</div><div class="info">' +
+    (p.vintage ? '<p class="era" style="margin:0 0 4px">' + t("era_" + p.era) + " · " + t("unique") + '</p>' : "") +
+    '<h3>' + esc(pname(p)) + '</h3><p class="art">' + p.id + (p.vintage ? "" : " · " + (p.stock ? t("in_stock") : t("to_order"))) + '</p>' +
+    '<p class="price" style="font-size:32px;margin:12px 0 2px">' + money(p.price) + ' ₸</p>' +
+    (p.sold ? "" : '<p class="note" style="margin:0">' + t("per_month", { x: money(total12 / 12) }) + " · " + t("calc_total").toLowerCase() + " " + money(total12) + ' ₸</p>') +
+    (p.vintage ? '<div class="story">' + esc(p.story[lang]) + '</div>' : "") +
+    '<dl class="specs">' + spec.map(function(s){ return '<dt>' + s[0] + '</dt><dd>' + esc(s[1]) + '</dd>'; }).join("") + '</dl>' + sizes +
+    (dopt ? '<p class="note">' + t("del_to", { c: cityName(userCity), t: dopt.time + (dopt.c ? ", " + money(dopt.c) + " ₸" : ", " + t("free").toLowerCase()) }) + '</p>' : "") +
+    '<div class="acts">' + (p.sold ? '<button class="btn" disabled>' + t("sold") + '</button>' :
+      '<button class="btn btn-gold" type="button" id="pAdd">' + t(p.vintage ? "reserve_v" : "to_cart") + '</button><button class="btn" type="button" id="pInst">' + t("buy_inst") + '</button>') +
+    '<button class="btn" type="button" id="pTry">' + t("try_on") + '</button><button class="btn fav" style="position:static;width:auto" type="button" data-id="' + p.id + '" aria-pressed="' + (favs.indexOf(p.id) > -1) + '" aria-label="' + t("favorites") + '"><svg viewBox="0 0 24 24" style="width:20px"><use href="#i-heart"/></svg></button></div></div></div>';
+  openModal(html);
+  var ps = $("#pSizes"); if (ps) ps.addEventListener("click", function(e){ var b = e.target.closest("[data-s]"); if (!b || b.disabled) return; selSize = b.dataset.s; $$("#pSizes button").forEach(function(x){ x.setAttribute("aria-pressed", x === b); }); $("#sizeErr").textContent = ""; });
+  var sh = $("#sizeHelp"); if (sh) sh.addEventListener("click", function(){ $("#sizeTip").hidden = !$("#sizeTip").hidden; });
+  var add = $("#pAdd"); if (add) add.addEventListener("click", function(){ if (p.sizes && p.sizes.length > 1 && !selSize){ $("#sizeErr").textContent = t("e_size"); return; } addCart(p.id, selSize || (p.sizes ? p.sizes[0].s : null)); closeModal(); });
+  var inst = $("#pInst"); if (inst) inst.addEventListener("click", function(){ goCalc(p.price); });
+  $("#pTry").addEventListener("click", function(){ closeModal(); $("#bNote").value = p.id + (selSize ? " (" + t("size_s") + " " + selSize + ")" : ""); $("#where").scrollIntoView(); setTimeout(function(){ $("#bDate").focus(); }, 400); });
+  $("#mBody .fav").addEventListener("click", function(){ toggleFav(p.id); });
+}
+
+/* ---------- drawer: cart / favourites ---------- */
+var drawerMode = "cart";
+function openDrawer(mode){ drawerMode = mode; renderDrawer(); $("#drawer").hidden = false; showScrim(true, closeDrawer); $("#dClose").focus(); }
+function closeDrawer(){ $("#drawer").hidden = true; showScrim(false); }
+function renderDrawer(){
+  var isCart = drawerMode === "cart", list = isCart ? cart : favs.map(function(id){ return { id:id }; });
+  $("#dTitle").textContent = t(isCart ? "cart_h" : "fav_h");
+  list = list.filter(function(c){ return byId(c.id); });
+  $("#dItems").innerHTML = list.length ? list.map(function(c, i){ var p = byId(c.id);
+    return '<div class="citem"><button type="button" class="pic linkbtn" data-open-p="' + p.id + '">' + art(p, "c") + '</button><div><b>' + esc(pname(p)) + '</b><small>' + p.id + (c.size ? " · " + t("size_s") + " " + c.size : "") + '</small><div class="price" style="font-size:18px;margin-top:4px">' + money(p.price) + ' ₸</div></div>' +
+      '<button type="button" class="linkbtn note" data-rm="' + i + '">' + t("remove") + '</button></div>'; }).join("") : '<p class="muted" style="padding:20px 0">' + t(isCart ? "cart_empty" : "fav_empty") + '</p>';
+  $("#dFoot").innerHTML = isCart && list.length ? '<div class="sum"><span>' + t("total") + '</span><span class="price">' + money(cartTotal()) + ' ₸</span></div><span class="note">' + t("per_month", { x: money(minMonthly(cartTotal())) }) + '</span><button class="btn btn-gold" type="button" id="toCheckout">' + t("checkout") + '</button>' : "";
+  var tc = $("#toCheckout"); if (tc) tc.addEventListener("click", function(){ closeDrawer(); openCheckout(); });
+}
+$("#dItems").addEventListener("click", function(e){
+  var rm = e.target.closest("[data-rm]"); if (rm){ var i = +rm.dataset.rm; if (drawerMode === "cart"){ cart.splice(i, 1); saveCart(); } else { favs.splice(i, 1); saveFav(); renderGrid(); } renderDrawer(); return; }
+  var op = e.target.closest("[data-open-p]"); if (op){ closeDrawer(); openProduct(op.dataset.openP); }
+});
+$("#dClose").addEventListener("click", closeDrawer);
+$("#cartBtn").addEventListener("click", function(){ openDrawer("cart"); });
+$("#favBtn").addEventListener("click", function(){ openDrawer("fav"); });
+
+/* ---------- phone mask & validation ---------- */
+function digits(v){ var d = v.replace(/\D/g, ""); if (d[0] === "8") d = "7" + d.slice(1); if (d && d[0] !== "7") d = "7" + d; return d.slice(0, 11); }
+function fmtPhone(d){ var x = d.slice(1), r = "+7"; if (x.length) r += " (" + x.slice(0, 3); if (x.length >= 3) r += ")"; if (x.length > 3) r += " " + x.slice(3, 6); if (x.length > 6) r += "-" + x.slice(6, 8); if (x.length > 8) r += "-" + x.slice(8, 10); return r; }
+document.addEventListener("input", function(e){ if (e.target.classList && e.target.classList.contains("phone")){ var d = digits(e.target.value); e.target.value = d.length > 1 ? fmtPhone(d) : (e.target.value ? "+7 (" : ""); } });
+document.addEventListener("focusin", function(e){ if (e.target.classList && e.target.classList.contains("phone") && !e.target.value) e.target.value = "+7 ("; });
+document.addEventListener("focusout", function(e){ if (e.target.classList && e.target.classList.contains("phone") && digits(e.target.value).length <= 1) e.target.value = ""; });
+function phoneOk(v){ return digits(v).length === 11; }
+
+/* ---------- sending: server endpoint or WhatsApp ---------- */
+function waUrl(text){ return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(text); }
+function send(kind, data, text, box, okH, okP){
+  var ep = CONFIG.endpoints[kind];
+  if (ep){
+    fetch(ep, { method:"POST", headers:{ "Content-Type":"application/json" }, body: JSON.stringify(data) })
+      .then(function(r){ if (!r.ok) throw new Error(r.status); box.innerHTML = '<div class="okbox"><h4>' + esc(okH) + '</h4><p>' + t("srv_ok") + '</p></div>'; })
+      .catch(function(){ fallback(); });
+    return;
+  }
+  fallback();
+  function fallback(){
+    var url = waUrl(text); window.open(url, "_blank", "noopener");
+    box.innerHTML = '<div class="okbox"><h4>' + esc(okH) + '</h4><p>' + esc(okP) + '</p><a class="btn btn-gold" href="' + url + '" target="_blank" rel="noopener">' + t("wa_again") + '</a></div>';
+  }
+}
+
+/* ---------- checkout ---------- */
+function openCheckout(){
+  if (!cart.length) return;
+  var sum = cartTotal(), d = store.get("contact", {});
+  var html = '<form class="co form" id="coForm" novalidate><h3>' + t("co_h") + '</h3>' +
+    '<div>' + cart.map(function(c){ var p = byId(c.id); return p ? '<div class="sum" style="font-size:14.5px;padding:4px 0;border-bottom:1px solid var(--line)"><span>' + esc(pname(p)) + (c.size ? ", " + t("size_s") + " " + c.size : "") + '</span><b>' + money(p.price) + ' ₸</b></div>' : ""; }).join("") +
+    '<div class="sum" style="padding-top:8px"><span>' + t("total") + '</span><span class="price">' + money(sum) + ' ₸</span></div></div>' +
+    '<h4>' + t("co_contacts") + '</h4><div class="two"><div><label class="lbl" for="coName">' + t("name") + '</label><input class="input" id="coName" autocomplete="name" value="' + esc(d.name || "") + '"></div>' +
+    '<div><label class="lbl" for="coPhone">' + t("phone") + '</label><input class="input phone" id="coPhone" type="tel" inputmode="tel" value="' + esc(d.phone || "") + '" placeholder="+7 (7__) ___-__-__"></div></div>' +
+    '<h4>' + t("co_delivery") + '</h4><div><label class="lbl" for="coCity">' + t("city") + '</label><select class="select" id="coCity">' + cityOptions(userCity) + '</select></div><div class="radio-list" id="coDel"></div>' +
+    '<div id="coAddrW"><label class="lbl" for="coAddr">' + t("co_addr") + '</label><input class="input" id="coAddr" autocomplete="street-address" data-ph="co_addr_ph" placeholder="' + t("co_addr_ph") + '" value="' + esc(d.addr || "") + '"></div>' +
+    '<h4>' + t("co_pay") + '</h4><div class="radio-list" id="coPay"></div><div id="coTerm"></div>' +
+    '<label class="check"><input type="checkbox" id="coAgree"><span>' + t("agree_pd") + '</span></label><div class="ferr" id="coErr"></div>' +
+    '<p class="note">' + t("co_note") + '</p><button class="btn btn-gold" type="submit">' + t("co_submit") + '</button></form>';
+  openModal(html, false);
+  var delSel = null, paySel = "card";
+  function renderDel(){
+    var city = $("#coCity").value, opts = deliveryOptions(city, sum);
+    if (!opts.some(function(o){ return o.k === delSel; })) delSel = opts[0].k;
+    $("#coDel").innerHTML = opts.map(function(o){ return '<label class="radio"><input type="radio" name="del" value="' + o.k + '"' + (o.k === delSel ? " checked" : "") + '><div><b>' + o.n + " — " + (o.c ? money(o.c) + " ₸" : t("free").toLowerCase()) + '</b><span>' + o.time + '</span></div></label>'; }).join("");
+    $("#coAddrW").hidden = delSel === "pickup"; renderPay();
+  }
+  function renderPay(){
+    if (paySel === "shop" && delSel !== "pickup") paySel = "card";
+    var pays = [["card", t("pay_card"), t("pay_card_p"), false], ["inst", t("pay_inst"), t("pay_inst_p"), false], ["kaspi", t("pay_kaspi"), t("pay_kaspi_p"), !CONFIG.kaspiEnabled], ["shop", t("pay_shop"), t("pay_shop_p"), delSel !== "pickup"]];
+    $("#coPay").innerHTML = pays.map(function(x){ return '<label class="radio' + (x[3] ? " dis" : "") + '"><input type="radio" name="pay" value="' + x[0] + '"' + (x[0] === paySel ? " checked" : "") + (x[3] ? " disabled" : "") + '><div><b>' + x[1] + '</b><span>' + x[2] + '</span></div></label>'; }).join("");
+    var terms = Object.keys(CONFIG.halykMarkup).map(Number).sort(function(a, b){ return a - b; });
+    $("#coTerm").innerHTML = paySel === "inst" ? '<label class="lbl" for="coT">' + t("calc_term") + '</label><select class="select" id="coT">' + terms.map(function(n){ var tot = sum * (1 + CONFIG.halykMarkup[n] / 100); return '<option value="' + n + '"' + (n === term ? " selected" : "") + '>' + n + " " + t("months") + " — " + money(tot / n) + " ₸ × " + n + " = " + money(tot) + ' ₸</option>'; }).join("") + '</select>' : "";
+  }
+  renderDel();
+  $("#coCity").addEventListener("change", function(){ delSel = null; renderDel(); });
+  $("#coDel").addEventListener("change", function(e){ delSel = e.target.value; $("#coAddrW").hidden = delSel === "pickup"; renderPay(); });
+  $("#coPay").addEventListener("change", function(e){ paySel = e.target.value; renderPay(); });
+  $("#coForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = $("#coName").value.trim(), ph = $("#coPhone").value, addr = $("#coAddr").value.trim(), err = "";
+    if (name.length < 2) err = t("e_name"); else if (!phoneOk(ph)) err = t("e_phone"); else if (delSel !== "pickup" && addr.length < 5) err = t("e_addr"); else if (!$("#coAgree").checked) err = t("e_check");
+    $("#coErr").textContent = err; if (err) return;
+    store.set("contact", { name:name, phone:ph, addr:addr });
+    var no = "MP" + Date.now().toString(36).toUpperCase().slice(-6), city = $("#coCity").value, opt = deliveryOptions(city, sum).filter(function(o){ return o.k === delSel; })[0];
+    var tSel = $("#coT") ? +$("#coT").value : null;
+    var lines = cart.map(function(c){ var p = byId(c.id); return "• " + pname(p) + " (" + p.id + (c.size ? ", " + t("size_s") + " " + c.size : "") + ") — " + money(p.price) + " ₸"; });
+    var payName = { card:t("pay_card"), inst:t("pay_inst") + (tSel ? ", " + tSel + " " + t("months") : ""), kaspi:"Kaspi", shop:t("pay_shop") }[paySel];
+    var text = t("co_h") + " " + no + "\n" + lines.join("\n") + "\n" + t("total") + ": " + money(sum) + " ₸\n" + t("co_delivery") + ": " + opt.n + ", " + cityName(city) + (delSel !== "pickup" ? ", " + addr : "") + (opt.c ? " (" + money(opt.c) + " ₸)" : "") + "\n" + t("co_pay") + ": " + payName + "\n" + name + ", " + ph;
+    var data = { order:no, items:cart.slice(), total:sum, city:city, delivery:delSel, deliveryCost:opt.c, address:addr, payment:paySel, term:tSel, name:name, phone:digits(ph), lang:lang };
+    var box = $("#mBody"); cart = []; saveCart();
+    send("order", data, text, box, t("co_ok_h", { n:no }), t("co_ok_p"));
+  });
+}
+
+/* ---------- forms: vintage, raffle, booking ---------- */
+function initForms(){
+  $("#sellForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = $("#sName").value.trim(), ph = $("#sPhone").value, err = "";
+    if (name.length < 2) err = t("e_name"); else if (!phoneOk(ph)) err = t("e_phone"); else if (!$("#sAgree").checked) err = t("e_check");
+    $("#sErr").textContent = err; if (err) return;
+    var mode = $("#sellForm input[name=mode]:checked").value;
+    var text = t("sell_h") + ": " + t(mode === "buy" ? "sell_buy_h" : "sell_com_h") + "\n" + t("s_type") + ": " + t("c_" + $("#sType").value) + "\n" + t("s_metal") + ": " + ($("#sMetal").value || "—") + "\n" + t("s_story") + ": " + ($("#sStory").value || "—") + "\n" + name + ", " + ph;
+    send("vintage", { mode:mode, type:$("#sType").value, metal:$("#sMetal").value, story:$("#sStory").value, name:name, phone:digits(ph) }, text, $("#sellBox"), t("s_ok_h"), t("s_ok_p"));
+  });
+  $("#raffleForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = $("#rName").value.trim(), ph = $("#rPhone").value, city = $("#rCity").value, err = "";
+    if (name.length < 2) err = t("e_name"); else if (!phoneOk(ph)) err = t("e_phone"); else if (!city) err = t("e_city"); else if (!$("#rAge").checked || !$("#rAgree").checked) err = t("e_check2");
+    $("#rErr").textContent = err; if (err) return;
+    var text = t("raffle_h") + "\n" + name + ", " + ph + ", " + cityName(city);
+    send("raffle", { name:name, phone:digits(ph), city:city, lang:lang }, text, $("#raffleBox"), t("r_ok_h"), t("r_ok_p"));
+  });
+  var open = new Date(CONFIG.openAt), today = new Date(), min = today > open ? today : open;
+  var iso = function(d){ var x = new Date(d.getTime() + 5 * 3600e3); return x.toISOString().slice(0, 10); };
+  $("#bDate").min = iso(min); $("#bDate").value = iso(min);
+  var slots = []; for (var h = CONFIG.hours[0]; h < CONFIG.hours[1]; h++) slots.push((h < 10 ? "0" : "") + h + ":00");
+  $("#bTime").innerHTML = slots.map(function(s){ return '<option>' + s + '</option>'; }).join("");
+  $("#bookForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = $("#bName").value.trim(), ph = $("#bPhone").value, date = $("#bDate").value, err = "";
+    if (!date || date < $("#bDate").min) err = t("e_date"); else if (name.length < 2) err = t("e_name"); else if (!phoneOk(ph)) err = t("e_phone"); else if (!$("#bAgree").checked) err = t("e_check");
+    $("#bErr").textContent = err; if (err) return;
+    var text = t("book_h") + ": " + date.split("-").reverse().join(".") + ", " + $("#bTime").value + "\n" + ($("#bNote").value ? $("#bNote").value + "\n" : "") + name + ", " + ph;
+    send("booking", { date:date, time:$("#bTime").value, note:$("#bNote").value, name:name, phone:digits(ph) }, text, $("#bookBox"), t("b_ok_h"), t("b_ok_p"));
+  });
+}
+
+/* ---------- raffle state, countdown, docs, faq ---------- */
+function raffleState(){
+  var now = Date.now();
+  if (now > new Date(CONFIG.raffleDraw).getTime() + 3600e3) return "done";
+  if (now > new Date(CONFIG.raffleEnd).getTime()) return "closed";
+  return "open";
+}
+function renderRaffle(){
+  var s = raffleState();
+  if (s !== "open" && $("#raffleForm")) $("#raffleBox").innerHTML = '<div class="okbox"><p style="margin:0">' + t(s === "done" ? "raffle_done" : "raffle_closed") + '</p></div>';
+  $("#ctaRaffle").textContent = t(s === "done" ? "cta_raffle_res" : "cta_raffle");
+  var rc = $("#rCity"); if (rc){ var rv = rc.value; rc.innerHTML = cityOptions(rv, true); }
+}
+function initCountdown(){
+  var target = new Date(CONFIG.openAt).getTime(), u = {};
+  $$("#count [data-u]").forEach(function(el){ u[el.dataset.u] = el; });
+  var pad = function(n){ return n < 10 ? "0" + n : String(n); };
+  (function tick(){
+    var ms = target - Date.now();
+    if (ms <= 0){ $("#count").hidden = true; $("#openNow").hidden = false; return; }
+    var s = Math.floor(ms / 1000);
+    u.d.textContent = Math.floor(s / 86400); u.h.textContent = pad(Math.floor(s % 86400 / 3600)); u.m.textContent = pad(Math.floor(s % 3600 / 60)); u.s.textContent = pad(s % 60);
+    setTimeout(tick, 1000 - (Date.now() % 1000));
+  })();
+}
+function openDoc(kind){
+  var map = { rules:["rules_h","rules_list","rules_note"], privacy:["privacy","privacy_list","docs_note"], offer:["offer","offer_list","docs_note"] }[kind];
+  openModal('<div class="co"><h3>' + t(map[0]) + '</h3><ul class="rules">' + t(map[1]).map(function(x){ return "<li>" + esc(x) + "</li>"; }).join("") + '</ul><p class="note">' + t(map[2]) + '</p></div>', false);
+}
+document.addEventListener("click", function(e){ var b = e.target.closest("[data-open]"); if (b){ e.preventDefault(); openDoc(b.dataset.open); } });
+function renderFaq(){ $("#faqList").innerHTML = t("faq").map(function(q){ return '<details><summary>' + esc(q[0]) + '</summary><p>' + esc(q[1]) + '</p></details>'; }).join(""); }
+
+/* ---------- assistant ---------- */
+var chatStarted = false;
+function toggleChat(on){
+  $("#chat").hidden = !on;
+  if (on){ $("#asStatus").textContent = t(pavHour() >= CONFIG.hours[0] && pavHour() < CONFIG.hours[1] ? "as_on" : "as_off"); if (!chatStarted){ chatStarted = true; bot(t("as_hello")); } renderQuick(); $("#chatIn").focus(); }
+}
+$("#fab").addEventListener("click", function(){ toggleChat($("#chat").hidden); });
+$("#chatClose").addEventListener("click", function(){ toggleChat(false); });
+function renderQuick(){ $("#quick").innerHTML = ["pick","size","inst","del","vin","raffle","where","human"].map(function(k){ return '<button type="button" data-q="' + k + '">' + t("q_" + k) + '</button>'; }).join(""); }
+function msg(html, who){ var d = document.createElement("div"); d.className = "msg " + who; d.innerHTML = html; $("#msgs").appendChild(d); $("#msgs").scrollTop = 1e6; return d; }
+function bot(text, extra){ return msg(esc(text) + (extra || ""), "bot"); }
+function goBtn(sel){ return '<div style="margin-top:8px"><a class="linkbtn" href="' + sel + '" data-close-chat>' + t("go_section") + '</a></div>'; }
+$("#msgs").addEventListener("click", function(e){ var m = e.target.closest("[data-pid]"); if (m) openProduct(m.dataset.pid); if (e.target.closest("[data-close-chat]") && window.innerWidth < 700) toggleChat(false); });
+$("#quick").addEventListener("click", function(e){ var b = e.target.closest("[data-q]"); if (!b) return; msg(esc(b.textContent), "me"); answer(b.dataset.q); });
+$("#chatForm").addEventListener("submit", function(e){ e.preventDefault(); var v = $("#chatIn").value.trim(); if (!v) return; $("#chatIn").value = ""; msg(esc(v), "me"); answer(null, v); });
+var KW = {
+  human:/консульт|продав|оператор|человек|менеджер|сатушы|адам|whatsapp|ватсап/,
+  raffle:/розыгр|приз|ұтыс|жүлде|конкурс/,
+  vin:/прода[тюж]|сдать|сдам|комисс|выкуп|оцен|бағала|тапсыр|сатқ|сату/,
+  size:/размер|өлшем/,
+  inst:/рассроч|кредит|бөліп|halyk|халык/,
+  del:/доставк|жеткіз|курьер|отправ|почт/,
+  pay:/оплат|төле|kaspi|каспи|карт/,
+  ret:/возврат|вернуть|обмен|қайтар|айырбас|гаранти|кепілдік/,
+  where:/где |адрес|цум|қайда|часы|режим|работает|мекенжай|уақыт/
+};
+var CATKW = [[/обручал|неке/,"wedding"],[/перстен|мужск|муж|ерлер|ер адам|жүзік/,"men"],[/кольц|сақин/,"ring"],[/серьг|сырға/,"earrings"],[/подвес|кулон|колье|алқа/,"pendant"],[/браслет|білезік/,"bracelet"],[/брош|төсбелгі/,"brooch"],[/комплект|жиынтық/,"set"]];
+var INSKW = [[/бриллиант|брилл|алмаз/,"diamond"],[/изумруд|зүмірет/,"emerald"],[/сапфир/,"sapphire"],[/рубин|лағыл/,"ruby"],[/жемчуг|інжу/,"pearl"]];
+function answer(key, text){
+  var s = (text || "").toLowerCase() + " ";
+  if (!key){ for (var k in KW) if (KW[k].test(s)){ key = k; break; } }
+  var cat = null, ins = null, budget = 0;
+  CATKW.some(function(c){ if (c[0].test(s)){ cat = c[1]; return true; } });
+  INSKW.some(function(c){ if (c[0].test(s)){ ins = c[1]; return true; } });
+  var m = s.replace(/\s(?=\d{3}\b)/g, "").match(/(\d+[.,]?\d*)\s*(млн|тыс|к\b|k\b|мың)?/);
+  if (m){ budget = parseFloat(m[1].replace(",", ".")); if (m[2] === "млн") budget *= 1e6; else if (m[2]) budget *= 1e3; if (budget < 1000) budget = 0; }
+  var vintageAsk = /винтаж|старин|антик|ескі/.test(s);
+  if (!key && (cat || ins || budget || vintageAsk || /подар|подобр|сыйлық|таңда|ищу|хочу|іздеймін/.test(s))) key = "find";
+  setTimeout(function(){
+    switch (key){
+      case "pick": bot(t("as_pick_q")); break;
+      case "find":
+        var pool = (vintageAsk ? VINTAGE.filter(function(v){ return !v.sold; }) : PRODUCTS).filter(function(p){
+          return (!cat || p.cat === cat) && (!ins || p.ins === ins) && (!budget || (p.price <= budget && p.price >= budget * .35)); }).sort(function(a, b){ return b.pop - a.pop; }).slice(0, 3);
+        if (!pool.length){ bot(t("as_none"), goBtn("#catalog")); break; }
+        bot(t("as_found"), pool.map(function(p){ return '<button type="button" class="mini" data-pid="' + p.id + '">' + art(p, "x") + '<span><b>' + esc(pname(p)) + '</b>' + money(p.price) + ' ₸</span></button>'; }).join(""));
+        break;
+      case "size": bot(t("size_text")); break;
+      case "inst": var pr = budget || 450000, tot = pr * (1 + CONFIG.halykMarkup[12] / 100); bot(t("as_inst", { p:money(pr), m:money(tot / 12), t:money(tot) }), goBtn("#pay")); break;
+      case "del": bot(t("as_del"), goBtn("#delivery")); break;
+      case "vin": bot(t("as_vin"), goBtn("#sell")); break;
+      case "raffle": bot(t("as_raffle"), goBtn("#raffle")); break;
+      case "where": bot(t("as_where"), goBtn("#where")); break;
+      case "pay": bot(t("as_pay"), goBtn("#pay")); break;
+      case "ret": bot(t("as_ret")); break;
+      case "human": bot(t("as_human"), '<div style="margin-top:8px"><a class="btn btn-gold btn-sm" target="_blank" rel="noopener" href="' + waUrl(t("as_name")) + '">' + t("as_human_btn") + '</a></div>'); break;
+      default: bot(t("as_dunno"));
+    }
+  }, 350);
+}
+
+/* ---------- language ---------- */
+function applyLang(){
+  document.documentElement.lang = lang === "kk" ? "kk" : "ru"; document.title = t("title");
+  $$("[data-i18n]").forEach(function(el){ el.textContent = t(el.getAttribute("data-i18n")); });
+  $$("[data-i18n-ph]").forEach(function(el){ el.placeholder = t(el.getAttribute("data-i18n-ph")); });
+  $$("[data-i18n-aria]").forEach(function(el){ el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria"))); });
+  $$(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.lang === lang); });
+  $("#addrLine").textContent = CONFIG.address[lang]; $("#legal").textContent = CONFIG.legal[lang];
+  $("#mnav").innerHTML = $$("#nav a").map(function(a){ return '<a href="' + a.getAttribute("href") + '">' + a.textContent + '</a>'; }).join("");
+  renderChips(); renderGrid(); renderVintage(); renderCalc(); renderDelivery(); renderRaffle(); renderFaq();
+  var st = $("#sType").value; $("#sType").innerHTML = ["ring","earrings","pendant","bracelet","brooch","set","men"].map(function(c){ return '<option value="' + c + '"' + (c === st ? " selected" : "") + '>' + t("c_" + c) + '</option>'; }).join("");
+  if (!$("#drawer").hidden) renderDrawer();
+  if (!$("#chat").hidden) renderQuick();
+}
+$$(".lang button").forEach(function(b){ b.addEventListener("click", function(){ lang = b.dataset.lang; store.set("lang", lang); applyLang(); }); });
+$("#burger").addEventListener("click", function(){ var m = $("#mnav"), open = m.hidden; m.hidden = !open; this.setAttribute("aria-expanded", open); });
+$("#mnav").addEventListener("click", function(e){ if (e.target.closest("a")){ $("#mnav").hidden = true; $("#burger").setAttribute("aria-expanded", "false"); } });
+
+/* ---------- sunburst ---------- */
+(function(){ var sun = $("#sun"), ns = "http://www.w3.org/2000/svg", n = 25, cx = 700, cy = 700, Rr = 760;
+  for (var i = 0; i < n; i++){ var a0 = Math.PI + i / n * Math.PI, a1 = Math.PI + (i + .5) / n * Math.PI, p = document.createElementNS(ns, "path");
+    p.setAttribute("d", "M" + cx + " " + cy + " L" + (cx + Rr * Math.cos(a0)).toFixed(1) + " " + (cy + Rr * Math.sin(a0)).toFixed(1) + " L" + (cx + Rr * Math.cos(a1)).toFixed(1) + " " + (cy + Rr * Math.sin(a1)).toFixed(1) + " Z");
+    p.setAttribute("class", "ray"); p.setAttribute("fill", i % 2 ? "rgba(198,162,90,.07)" : "rgba(198,162,90,.12)"); p.style.animationDelay = Math.abs(i - (n - 1) / 2) * 45 + "ms"; sun.appendChild(p); }
+  [180, 300, 420].forEach(function(r){ var c = document.createElementNS(ns, "path"); c.setAttribute("d", "M" + (cx - r) + " " + cy + " A" + r + " " + r + " 0 0 1 " + (cx + r) + " " + cy); c.setAttribute("fill", "none"); c.setAttribute("stroke", "rgba(198,162,90,.35)"); sun.appendChild(c); });
+})();
+
+/* ---------- start ---------- */
+$("#gisLink").href = CONFIG.gis; $("#ftWa").href = waUrl(""); $("#ftIg").href = CONFIG.instagram; $("#ftTel").href = "tel:+" + CONFIG.whatsapp; $("#ftTel").textContent = CONFIG.phoneDisplay;
+initCatalog(); initVintage(); initCalc(); initDelivery(); initForms(); initCountdown();
+saveFav(); saveCart(); applyLang();
+if (location.hash.indexOf("#catalog?") === 0) setTimeout(function(){ $("#catalog").scrollIntoView(); }, 50);
+})();
+</script>
+</body>
+</html>
